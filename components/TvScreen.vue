@@ -5,16 +5,17 @@
         <canvas id="canvas" ref="canvas" class="picture"></canvas>
         <div class="overlay">
           <div ref="text" class="text">
-            <span>AV-1</span>
+            <span>LB.GG</span>
           </div>
           <div ref="menu" class="menu">
             <header>
               Main Menu
             </header>
             <ul ref="list">
-              <li class="active"><a href="#" title="">Picture</a></li>
-              <li><a href="#" title="">Sound</a></li>
-              <li><a href="#" title="">About</a></li>
+              <li class="active"><a href="#" title="">Github</a></li>
+              <li><a href="#" title="">Discord</a></li>
+              <li><a href="#" title="">Info and FAQs</a></li>
+              <li><a href="#" title="">Blog</a></li>
               <li><a href="#" title="">Contact</a></li>
             </ul>
             <footer>
@@ -26,34 +27,6 @@
       </div>
     </main>
   </div>
-
-<!--  <div ref="tv-screen" class="tv-screen">-->
-<!--    <div class="scan-lines">-->
-<!--      <div class="screen">-->
-<!--        <canvas id="canvas" ref="canvas" class="picture"></canvas>-->
-<!--        <div class="overlay">-->
-<!--          <div ref="text" class="text">-->
-<!--            <span>LB.GG</span>-->
-<!--          </div>-->
-<!--          <div ref="page-content" class="page-content">-->
-<!--            <header>-->
-<!--              <h1>LEADERBOARDS.GG</h1>-->
-<!--              <h2>High Score</h2>-->
-<!--            </header>-->
-<!--            <ul ref="list">-->
-<!--              <li>1st AAA 300000</li>-->
-<!--              <li>2nd BBB 292978</li>-->
-<!--              <li>3rd CCC 222990</li>-->
-<!--              <li>4th DDD 186500</li>-->
-<!--              <li>5th EEE 179170</li>-->
-<!--              <li>6th FFF 000500</li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
 </template>
 
 <script>
