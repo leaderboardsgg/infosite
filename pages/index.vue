@@ -1,7 +1,6 @@
 <template>
   <div class="pageview">
-    tv
-    <TvScreen>test slot</TvScreen>
+    <TvScreen></TvScreen>
   </div>
 </template>
 

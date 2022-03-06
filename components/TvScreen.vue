@@ -1,32 +1,58 @@
 <template>
-  <div ref="tv-screen" class="tv-screen">
-    <div class="scanlines">
+  <div class="tv">
+    <main ref="main" class="scanlines">
       <div class="screen">
         <canvas id="canvas" ref="canvas" class="picture"></canvas>
         <div class="overlay">
           <div ref="text" class="text">
-            <span>LB.GG</span>
+            <span>AV-1</span>
           </div>
-          <div ref="page-content" class="page-content">
+          <div ref="menu" class="menu">
             <header>
-              <h1>LEADERBOARDS.GG</h1>
-              <h2>High Score</h2>
+              Main Menu
             </header>
             <ul ref="list">
-              <li>1st AAA 300000</li>
-              <li>2nd BBB 292978</li>
-              <li>3rd CCC 222990</li>
-              <li>4th DDD 186500</li>
-              <li>5th EEE 179170</li>
-              <li>6th FFF 000500</li>
+              <li class="active"><a href="#" title="">Picture</a></li>
+              <li><a href="#" title="">Sound</a></li>
+              <li><a href="#" title="">About</a></li>
+              <li><a href="#" title="">Contact</a></li>
             </ul>
+            <footer>
+              <div class="key">Exit: <span>1</span></div>
+              <div class="key">Select: <span>2</span></div>
+            </footer>
           </div>
         </div>
       </div>
-
-    </div>
-
+    </main>
   </div>
+
+<!--  <div ref="tv-screen" class="tv-screen">-->
+<!--    <div class="scan-lines">-->
+<!--      <div class="screen">-->
+<!--        <canvas id="canvas" ref="canvas" class="picture"></canvas>-->
+<!--        <div class="overlay">-->
+<!--          <div ref="text" class="text">-->
+<!--            <span>LB.GG</span>-->
+<!--          </div>-->
+<!--          <div ref="page-content" class="page-content">-->
+<!--            <header>-->
+<!--              <h1>LEADERBOARDS.GG</h1>-->
+<!--              <h2>High Score</h2>-->
+<!--            </header>-->
+<!--            <ul ref="list">-->
+<!--              <li>1st AAA 300000</li>-->
+<!--              <li>2nd BBB 292978</li>-->
+<!--              <li>3rd CCC 222990</li>-->
+<!--              <li>4th DDD 186500</li>-->
+<!--              <li>5th EEE 179170</li>-->
+<!--              <li>6th FFF 000500</li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
 </template>
 
@@ -51,6 +77,7 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', this.handleResize);
+    this.handleResize();
     this.ctx = this.$refs.canvas.getContext('2d');
     this.animate();
     for (let i = 0; i < 4; i++) {
@@ -58,8 +85,8 @@ export default {
       this.$refs.text.appendChild(span);
     }
     setTimeout(() => {
-      this.$refs['tv-screen'].classList.add('on');
-      this.$refs['tv-screen'].classList.remove('off');
+      this.$refs.main.classList.add('on');
+      this.$refs.main.classList.remove('off');
       this.animate();
     }, 1000);
   },
@@ -96,9 +123,19 @@ export default {
 $secondary: #1b2838;
 $screen-background: #121010;
 
-$color: lime;
+$lime: lime;
 $font-family: "Terminal";
 $font-size: 20px;
+
+@font-face {
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/terminal_copy.ttf);
+  font-family: 'Terminal';
+}
+@font-face {
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/sys.ttf)
+  format('truetype');
+  font-family: 'Sys';
+}
 
 @mixin pseudo {
   position: absolute;
@@ -122,15 +159,16 @@ $font-size: 20px;
   justify-content: center;
 }
 
-.tv-screen{
+body{
   background: $secondary none repeat scroll 0 0;
   margin: 0;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
+
 // background when TV is off
-.screen::before {
+.screen:before {
   background: transparent
   linear-gradient(to bottom, #85908c 0%, #323431 100%)
   repeat
@@ -138,10 +176,10 @@ $font-size: 20px;
   0
   0;
   content: "";
+  @include center;
   width: 100%;
   height: 100%;
   z-index: -1;
-  @include center;
 }
 // CRT scanlines
 .scanlines .overlay {
@@ -153,7 +191,7 @@ $font-size: 20px;
   z-index: 1;
   @include flexCenter;
 
-  &::after {
+  &:after {
     position: absolute;
     left: 0;
     top: 0;
@@ -164,7 +202,7 @@ $font-size: 20px;
     background-size: 100% 100%;
     content: "";
   }
-  &::before {
+  &:before {
     @include pseudo;
     background: linear-gradient(
         transparentize($screen-background, 1) 50%,
@@ -232,7 +270,7 @@ $font-size: 20px;
       &.active {
         background-color: #1af2ff;
         a {
-          // background-color: #1af2ff;
+           //background-color: #1af2ff;
         }
       }
 
@@ -250,7 +288,7 @@ $font-size: 20px;
     padding: 5px 15px;
     animation: 5s ease 2000ms normal none infinite running glitch;
 
-    &::after {
+    &:after {
       clear: both;
       content: " ";
       display: table;
@@ -293,7 +331,7 @@ $font-size: 20px;
 $delay: 2000ms;
 
 .text {
-  color: lime;
+  color: $lime;
   content: "AV-1";
   opacity: 0;
   filter: blur(0.5px);
@@ -488,23 +526,19 @@ $delay: 2000ms;
   }
   40% {
     opacity: 1;
-    transform: scale(1, 1);
-    transform: skew(0, 0);
+    transform: scale(1, 1) skew(0, 0);
   }
   41% {
     opacity: 0.8;
-    transform: scale(1, 1.2);
-    transform: skew(80deg, 0);
+    transform: scale(1, 1.2) skew(80deg, 0);
   }
   42% {
     opacity: 0.8;
-    transform: scale(1, 1.2);
-    transform: skew(-50deg, 0);
+    transform: scale(1, 1.2) skew(-50deg, 0);
   }
   43% {
     opacity: 1;
-    transform: scale(1, 1);
-    transform: skew(0, 0);
+    transform: scale(1, 1) skew(0, 0);
   }
   65% {
   }
