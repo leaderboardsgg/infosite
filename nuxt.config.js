@@ -18,13 +18,15 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '~assets/css/main.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -32,10 +34,20 @@ export default {
     '@nuxtjs/eslint-module',
   ],
 
+  styleResources: {
+    scss: [
+      '~/assets/scss/mixins/mixins.scss',
+      '~/assets/scss/settings/variables.scss',
+      '~/assets/scss/styles.scss'
+    ]
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    //  https://codesandbox.io/s/github/nuxt-community/svg-sprite-module/
+    '@nuxtjs/svg-sprite',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
