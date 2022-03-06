@@ -2,7 +2,7 @@
   <div ref="tv-screen" class="tv-screen">
     <div class="scanlines">
       <div class="screen">
-        <canvas ref="canvas" id="canvas" class="picture"></canvas>
+        <canvas id="canvas" ref="canvas" class="picture"></canvas>
         <div class="overlay">
           <div ref="text" class="text">
             <span>LB.GG</span>
@@ -38,32 +38,32 @@ export default {
       frame: 0,
       idx: 0,
       toggle: true,
-
-    }
+      windowWidth: 0,
+    };
   },
   computed: {
-
-    // this.$refs.canvas.width = this.ww / 3;
-    // this.$refs.canvas.height = (this.ww * 0.5625) / 3;
-    // return {
-    //   ctx: this.$refs.canvas.getContext('2d'),
-    //   ww: window.innerWidth,
-    // },
   },
   watch: {
-
+    windowWidth(newWidth) {
+      this.$refs.canvas.width = newWidth / 3;
+      this.$refs.canvas.height = (newWidth * 0.5625) / 3;
+    },
   },
   mounted() {
+    window.addEventListener('resize', this.handleResize);
+    this.ctx = this.$refs.canvas.getContext('2d');
     this.animate();
     for (let i = 0; i < 4; i++) {
       const span = this.$refs.text.firstElementChild.cloneNode(true);
       this.$refs.text.appendChild(span);
     }
-    setTimeout(function() {
-      this.$refs.tvScreen.classList.add('on');
-      this.$refs.tvScreen.classList.remove('off');
+    setTimeout(() => {
+      this.$refs['tv-screen'].classList.add('on');
+      this.$refs['tv-screen'].classList.remove('off');
       this.animate();
     }, 1000);
+  },
+  updated() {
   },
   methods: {
     snow(){
@@ -82,6 +82,9 @@ export default {
     animate() {
       this.snow();
       this.frame = requestAnimationFrame(this.animate);
+    },
+    handleResize() {
+      this.windowWidth = window.innerWidth;
     }
   },
 }
