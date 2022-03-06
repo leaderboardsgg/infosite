@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
+    "@nuxtjs/svg-sprite": "^0.5.2",
     "core-js": "^3.19.3",
     "gsap": "^3.9.1",
     "nuxt": "^2.15.8",
@@ -36,6 +37,8 @@
     "eslint-plugin-vue": "^8.2.0",
     "jest": "^27.4.4",
     "prettier": "^2.5.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^10.2.1",
     "vue-jest": "^3.0.4"
   }
 }
