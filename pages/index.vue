@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import TvScreen from "~/components/TvScreen";
+import TvScreen from "@/components/TvScreen";
 
 export default {
   name: 'IndexPage',
-  components: {TvScreen},
+  components: { TvScreen },
 }
 </script>

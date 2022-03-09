@@ -52,7 +52,7 @@ export default {
     window.addEventListener('resize', this.handleResize);
     this.handleResize();
     this.ctx = this.$refs.canvas.getContext('2d');
-    // this.animate();
+    this.animate();
     for (let i = 0; i < 4; i++) {
       const span = this.$refs.text.firstElementChild.cloneNode(true);
       this.$refs.text.appendChild(span);
@@ -60,7 +60,7 @@ export default {
     setTimeout(() => {
       this.$refs.main.classList.add('on');
       this.$refs.main.classList.remove('off');
-      // this.animate();
+      this.animate();
     }, 1000);
   },
   updated() {
