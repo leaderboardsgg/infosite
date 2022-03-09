@@ -9,7 +9,7 @@
           </div>
           <div ref="menu" class="menu">
             <header>
-              Coming Soon(TM)
+              Coming Soon(TM) Leaderboardsgg
             </header>
             <ul ref="list">
               <li class="active"><a href="#" title="">Github</a></li>
