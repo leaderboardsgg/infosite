@@ -19,7 +19,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~assets/css/main.css'
+    '~assets/scss/styles.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -32,6 +32,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    // https://google-fonts.nuxtjs.org/setup
+    '@nuxtjs/google-fonts'
   ],
 
   styleResources: {
@@ -42,6 +44,15 @@ export default {
     ]
   },
 
+  googleFonts: {
+    // https://www.elian.codes/blog/adding-google-fonts-to-your-nuxtjs-site/
+    download: true,
+    families: {
+      Inter: true,
+      Monoton: true,
+      'Mr+Dafoe': true,
+    },
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
@@ -56,3 +67,14 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
+
+// font-family: 'Bungee Shade', cursive;
+// font-family: 'Codystar', cursive;
+// font-family: 'DotGothic16', sans-serif;
+// font-family: 'Knewave', cursive;
+// font-family: 'Major Mono Display', monospace;
+// font-family: 'Monofett', cursive;
+// font-family: 'Monoton', cursive;
+// font-family: 'Neonderthaw', cursive;
+// font-family: 'Press Start 2P', cursive;
+// font-family: 'Special Elite', cursive;

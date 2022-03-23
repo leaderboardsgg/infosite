@@ -1,4 +1,5 @@
 /* COLORS */
+//logo colors
 $indigo: #4A0593;
 $plum: #6F0F8C;
 $fuchsia: #AF50AF;
@@ -9,10 +10,68 @@ $ruby: #CF1757;
 $black: #000;
 $white: #fff;
 
-$dark-teal: #1b2838;
-$screen-background: #121010;
-$lime: lime; // TODO: FIND THIS HEXCODE
+//theme colors
+$pumpkin: #ff6c11;
+$turquoise: #2de2e6;
+$gold: #f9c80e;
+$magic-potion: #ff4365;
 
+//animation colors
+$dark-teal: #261447;
+$screen-background: #0d0221;
+$lime: lime; // TODO: FIND THIS HEXCODE
 
 $font-family: "Terminal";
 $font-size: 20px;
+
+// Z Index
+$z-base: 100;
+$z-header: $z-base + 20;
+$z-navigation: $z-base + 10;
+$z-modal: $z-base + 30;
+$z-overlay: $z-base + 100;
+
+// Default Animation Values
+$transition-speed-slow: 325ms;
+$transition-speed: 250ms;
+$transition-speed-fast: 175ms;
+
+// Sizes
+
+// Media Queries
+$media-small: 'max-width: 43em';
+$media-small-landscape: 'max-width: 63em) and (orientation: landscape';
+$media-medium-up: 'min-width: 43em';
+$media-medium: 'min-width: 43em) and (max-width: 82em';
+$media-medium-down: 'max-width: 82em';
+$media-large: 'min-width: 82em';
+$media-large-landscape: 'min-width: 63em) and (orientation: landscape';
+$media-card-small: 'max-width: 54em';
+$media-card-large: 'min-width: 54em';
+$media-footer-small: 'max-width: 50em';
+$media-footer-medium-up: 'min-width: 50em';
+$media-footer-medium: 'min-width: 50em) and (max-width: 82em';
+
+// HTML Entities
+$amp: '\46';
+$lt: '\74';
+$gt: '\76';
+$cent: '\242';
+$copy: '\252';
+$laquo: '\253';
+$reg: '\256';
+$deg: '\260';
+$raquo: '\273';
+$divide: '\367';
+$ndash: '\2013';
+$mdash: '\2014';
+$ldquo: '\201C';
+$rdquo: '\201D';
+$bull: '\2022';
+$lsaquo: '\2039';
+$rsaquo: '\203A';
+$bull-square: '\2219';
+$hellip: '\2026';
+$trade: '\2122';
+$lang: '\2329';
+$rang: '\232A';

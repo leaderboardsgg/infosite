@@ -1,11 +1,14 @@
+
 // Mixins
 @import 'mixins/mixins';
 
 // Settings
-@import 'settings/fonts';
 @import 'settings/variables';
 
 // Globals
 @import 'globals/typography';
 
 // Animations
+
+// Defaults
+@import 'globals/defaults';

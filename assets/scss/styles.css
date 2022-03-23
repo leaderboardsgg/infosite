@@ -1,3 +1,131 @@
 /* COLORS */
+h1 {
+  font-family: Monoton;
+}
+
+h2 {
+  font-family: "Mr Dafoe";
+}
+
+h3 {
+  font-family: Inter;
+}
+
+#__nuxt {
+  background-color: black;
+  color: #2de2e6;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  color: #000;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+picture {
+  display: block;
+  line-height: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+a.no-pointer {
+  cursor: initial;
+}
+p a:not(.button), .accordion li a:not(.button) {
+  border-bottom: 1px dotted #000;
+  color: #000;
+}
+p a:not(.button):hover, .accordion li a:not(.button):hover {
+  border-bottom-color: #A317F2;
+  color: #A317F2;
+}
+
+figure {
+  margin: 0;
+}
+figure.border img {
+  box-sizing: border-box;
+}
+
+video {
+  max-width: 100%;
+}
+
+::selection {
+  background: #A317F2;
+  color: #fff;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+ul li,
+ol li {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+
+dd {
+  margin-left: 0;
+}
+
+sup {
+  top: -0.3em;
+}
 
 /*# sourceMappingURL=styles.css.map */

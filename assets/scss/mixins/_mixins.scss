@@ -19,3 +19,261 @@
   right: 0;
   content: " ";
 }
+//
+//@use 'sass:math';
+//
+//$columns: 12;
+//$container-width: 1520px;
+//$gutter-size: 18px;
+//$column-size: math.div(($container-width - $gutter-size * ($columns - 1)), $columns);
+//
+//// Page Container
+//@mixin container
+//{
+//  box-sizing: border-box;
+//  width: $container-width + $gutter-size * 2;
+//  //max-width: 100%;
+//  max-width: calc(100vw - 400px);
+//
+//  margin:
+//  {
+//    right: auto;
+//    left: auto;
+//  };
+//  //padding: {
+//  //  left: $gutter-size;
+//  //  right: $gutter-size;
+//  //};
+//
+//  @media ($media-small)
+//  {
+//    max-width: calc(100vw - 48px);
+//  }
+//
+//  @media ($media-medium)
+//  {
+//    max-width: calc(100vw - 68px);
+//  }
+//}
+//
+//@mixin container-wide
+//{
+//  box-sizing: border-box;
+//  width: $container-width + $gutter-size * 2;
+//  //max-width: 100%;
+//  max-width: calc(100vw - 160px);
+//
+//  margin:
+//  {
+//    right: auto;
+//    left: auto;
+//  };
+//  //padding: {
+//  //  left: $gutter-size;
+//  //  right: $gutter-size;
+//  //};
+//
+//  @media ($media-small)
+//  {
+//    max-width: calc(100vw - 48px);
+//  }
+//
+//  @media ($media-medium)
+//  {
+//    max-width: calc(100vw - 68px);
+//  }
+//}
+//
+////@mixin container-full
+////{
+////  box-sizing: border-box;
+////  width: 1000px;
+////  max-width: 100%;
+////
+////  margin:
+////  {
+////    right: auto;
+////    left: auto;
+////  };
+////  padding: 0 $gutter-size;
+////}
+//
+//@function column-span($columns: 0, $gutters: null)
+//{
+//  @if $gutters == null
+//  {
+//    $gutters: abs($columns) - 1;
+//    @if $columns < 0
+//    {
+//      $gutters: $gutters * -1;
+//    }
+//  }
+//  @if $columns != 0 and $gutters != 0
+//  {
+//    @return calc(#{($columns * $column-size) / $container-width * 100%} + #{$gutters * $gutter-size});
+//  }
+//  @else if $columns != 0
+//  {
+//    @return math.div($columns * $column-size, $container-width) * 100%;
+//  }
+//  @else if $gutters != 0
+//  {
+//    @return $gutters * $gutter-size;
+//  }
+//}
+//
+//// Mixin to convert tracking to letter spacing
+//@mixin tracking($tracking)
+//{
+//  letter-spacing: math.div($tracking, 1000) * 1em;
+//}
+//
+//// Mixin to quickly set transition with just @include animate;
+//@mixin animate($speed: $transition-speed)
+//{
+//  transition: $speed;
+//}
+//
+//@mixin bar-before($color: $yellow)
+//{
+//  &:before
+//  {
+//    content: '';
+//
+//    display: block;
+//
+//    width: 109px;
+//    height: 13px;
+//
+//    background-color: $color;
+//  }
+//}
+//
+//@mixin bar-after($color: $yellow)
+//{
+//  &:after
+//  {
+//    content: '';
+//
+//    display: block;
+//
+//    width: 109px;
+//    height: 13px;
+//
+//    background-color: $color;
+//  }
+//}
+//
+//@mixin list
+//{
+//  //@include t-copy;
+//  padding-left: 2.4rem;
+//
+//  li
+//  {
+//    position: relative;
+//    &:before
+//    {
+//      position: absolute;
+//      top: 0;
+//      left: -2.4rem;
+//
+//      width: 2.4rem;
+//    }
+//  }
+//}
+//
+//@mixin unordered-list
+//{
+//  @include list;
+//
+//  li
+//  {
+//    &:before
+//    {
+//      content: $bull;
+//    }
+//  }
+//}
+//
+//@mixin ordered-list
+//{
+//  @include list;
+//
+//  list-style: none;
+//
+//  counter-reset: listCounter;
+//
+//  li
+//  {
+//    counter-increment: listCounter;
+//    &:before
+//    {
+//      content: counter(listCounter) '.';
+//    }
+//  }
+//}
+//
+//@mixin button
+//{
+//  //@include t-button;
+//  display: inline-block;
+//  position: relative;
+//  z-index: 1;
+//
+//  box-sizing: border-box;
+//
+//  outline: none;
+//
+//  color: $black;
+//
+//  cursor: pointer;
+//}
+//
+//@mixin button-default-secondary-base
+//{
+//  padding: 11px 22px 12px;
+//
+//  text-align: center;
+//}
+//
+//@mixin button-default
+//{
+//  @include button;
+//}
+//
+//@mixin button-secondary
+//{
+//  @include button;
+//}
+//
+//@mixin copy-styles {
+//  h1,
+//  h2,
+//  h3,
+//  h4,
+//  h5,
+//  p,
+//  ul,
+//  ol {
+//    &:not(:last-child) {
+//      margin-bottom: 16px;
+//    }
+//  }
+//}
+//
+//
+//@mixin last-row($columns)
+//{
+//  &:nth-child(#{$columns}n+1):nth-last-child(-n+#{$columns}),
+//  &:nth-child(#{$columns}n+1):nth-last-child(-n+#{$columns}) ~ *
+//  {
+//    @content;
+//  }
+//}
+//
+//@mixin full-width
+//{
+//  margin-right: calc(50% - 50vw);
+//  margin-left: calc(50% - 50vw);
+//}

@@ -4,25 +4,25 @@
       <div class="screen">
         <canvas id="canvas" ref="canvas" class="picture"></canvas>
         <div class="overlay">
-<!--          <div ref="text" class="text">-->
-<!--            <span>LB.GG</span>-->
-<!--          </div>-->
-<!--          <div ref="menu" class="menu">-->
-<!--            <header>-->
-<!--              Coming Soon(TM) Leaderboardsgg-->
-<!--            </header>-->
-<!--            <ul ref="list">-->
-<!--              <li class="active"><a href="#" title="">Github</a></li>-->
-<!--              <li><a href="https://discord.leaderboards.gg" title="">Discord</a></li>-->
-<!--              <li><a href="#" title="">Info and FAQs</a></li>-->
-<!--              <li><a href="#" title="">Blog</a></li>-->
-<!--              <li><a href="#" title="">Contact</a></li>-->
-<!--            </ul>-->
-<!--            <footer>-->
-<!--              <div class="key">Exit: <span>1</span></div>-->
-<!--              <div class="key">Select: <span>2</span></div>-->
-<!--            </footer>-->
-<!--          </div>-->
+          <div ref="text" class="text">
+            <span>LB.GG</span>
+          </div>
+          <div ref="menu" class="menu">
+            <header>
+              Coming Soon(TM) Leaderboardsgg
+            </header>
+            <ul ref="list">
+              <li class="active"><a href="#" title="">Github</a></li>
+              <li><a href="https://discord.leaderboards.gg" title="">Discord</a></li>
+              <li><a href="#" title="">Info and FAQs</a></li>
+              <li><a href="#" title="">Blog</a></li>
+              <li><a href="#" title="">Contact</a></li>
+            </ul>
+            <footer>
+              <div class="key">Exit: <span>1</span></div>
+              <div class="key">Select: <span>2</span></div>
+            </footer>
+          </div>
         </div>
       </div>
     </main>
@@ -53,10 +53,10 @@ export default {
     this.handleResize();
     this.ctx = this.$refs.canvas.getContext('2d');
     // this.animate();
-    // for (let i = 0; i < 4; i++) {
-    //   const span = this.$refs.text.firstElementChild.cloneNode(true);
-    //   this.$refs.text.appendChild(span);
-    // }
+    for (let i = 0; i < 4; i++) {
+      const span = this.$refs.text.firstElementChild.cloneNode(true);
+      this.$refs.text.appendChild(span);
+    }
     setTimeout(() => {
       this.$refs.main.classList.add('on');
       this.$refs.main.classList.remove('off');
@@ -193,85 +193,85 @@ body{
   0;
 }
 
-//.menu {
-//  opacity: 0;
-//  background-color: #0069ff;
-//  box-sizing: border-box;
-//  font-family: "Sys";
-//  font-size: 32px;
-//  height: auto;
-//  text-transform: uppercase;
-//  width: 34%;
-//  text-shadow: 1px 1px 0 #000000,
-//  -1px -1px 0 #000000,
-//  1px -1px 0 #000000,
-//  -1px 1px 0 #000000;
-//  filter: blur(1px);
-//  color: #fff;
-//  animation: jerkup 100ms infinite;
-//
-//  header {
-//    color: #e7e05c;
-//    margin-bottom: 10px;
-//    padding: 5px 15px;
-//    animation: 5s ease 2000ms normal none infinite running glitch;
-//  }
-//
-//  ul {
-//    margin: 0;
-//    padding: 0;
-//
-//    li {
-//      box-sizing: border-box;
-//      list-style: outside none none;
-//      padding: 5px 15px;
-//
-//      &.active {
-//        background-color: #1af2ff;
-//        a {
-//           //background-color: #1af2ff;
-//        }
-//      }
-//
-//      a {
-//        color: #fff;
-//        text-decoration: none;
-//      }
-//    }
-//    animation: 5s ease 2000ms normal none infinite running glitch;
-//  }
-//
-//  footer {
-//    background-color: #2afd72;
-//    margin-top: 10px;
-//    padding: 5px 15px;
-//    animation: 5s ease 2000ms normal none infinite running glitch;
-//
-//    &:after {
-//      clear: both;
-//      content: " ";
-//      display: table;
-//    }
-//
-//    .key {
-//      float: left;
-//      width: 50%;
-//
-//      span {
-//        background-color: #0069ff;
-//        border: 6px solid #e7e05c;
-//        border-radius: 6px;
-//        display: inline-block;
-//        height: 34px;
-//        line-height: 36px;
-//        padding-left: 6px;
-//      }
-//    }
-//    .key:last-child {
-//      text-align: right;
-//    }
-//  }
-//}
+.menu {
+  opacity: 0;
+  background-color: #0069ff;
+  box-sizing: border-box;
+  font-family: "Sys";
+  font-size: 32px;
+  height: auto;
+  text-transform: uppercase;
+  width: 34%;
+  text-shadow: 1px 1px 0 #000000,
+  -1px -1px 0 #000000,
+  1px -1px 0 #000000,
+  -1px 1px 0 #000000;
+  filter: blur(1px);
+  color: #fff;
+  animation: jerkup 100ms infinite;
+
+  header {
+    color: #e7e05c;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    animation: 5s ease 2000ms normal none infinite running glitch;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      box-sizing: border-box;
+      list-style: outside none none;
+      padding: 5px 15px;
+
+      &.active {
+        background-color: #1af2ff;
+        a {
+           //background-color: #1af2ff;
+        }
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    animation: 5s ease 2000ms normal none infinite running glitch;
+  }
+
+  footer {
+    background-color: #2afd72;
+    margin-top: 10px;
+    padding: 5px 15px;
+    animation: 5s ease 2000ms normal none infinite running glitch;
+
+    &:after {
+      clear: both;
+      content: " ";
+      display: table;
+    }
+
+    .key {
+      float: left;
+      width: 50%;
+
+      span {
+        background-color: #0069ff;
+        border: 6px solid #e7e05c;
+        border-radius: 6px;
+        display: inline-block;
+        height: 34px;
+        line-height: 36px;
+        padding-left: 6px;
+      }
+    }
+    .key:last-child {
+      text-align: right;
+    }
+  }
+}
 
 .on .picture {
   animation: 3000ms linear 0ms normal forwards 1 running on;

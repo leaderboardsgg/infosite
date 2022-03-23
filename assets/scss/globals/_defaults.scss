@@ -1,0 +1,288 @@
+h1 {
+  font-family: Monoton;
+}
+
+h2 {
+  font-family: "Mr Dafoe";
+}
+
+h3 {
+  font-family: Inter;
+}
+
+#__nuxt {
+  background-color: black;
+  color: $turquoise;
+}
+
+body {
+  margin: 0;
+}
+
+html
+{
+  box-sizing: border-box;
+
+  color: $black;
+  //browser font size hack for accessibility to make rem multiple of 10's eg. 1rem = 10px
+
+  font-size: 62.5%;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+b,
+strong
+{
+  font-weight: 600;
+}
+
+picture
+{
+  display: block;
+
+  line-height: 0;
+}
+
+img
+{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+//figure
+//{
+//  canvas
+//  {
+//    max-width: 100%;
+//  }
+//}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  span
+  {
+    color: $black;
+  }
+}
+
+a
+{
+  text-decoration: none;
+
+  &.no-pointer
+  {
+    cursor: initial;
+  }
+
+  //color: $dark-blue;
+  .breadcrumb &
+  {
+    //@include animate;
+
+    &:hover
+    {
+      //color: $blue;
+    }
+  }
+
+  &:not(.button)
+  {
+    p &,
+    .accordion li &
+    {
+      //@include animate;
+
+      border-bottom: 1px dotted $black;
+
+      color: $black;
+      &:hover
+      {
+        border-bottom-color: $purple;
+
+        color: $purple;
+      }
+    }
+  }
+}
+
+//picture
+//{
+//  img
+//  {
+//    @include animate(filter $transition-speed * 1.5);
+//
+//    &.lazyload
+//    {
+//      filter: blur(5px);
+//    }
+//
+//    &.lazyloaded
+//    {
+//      filter: blur(0);
+//    }
+//  }
+//}
+
+figure
+{
+  margin: 0;
+
+  &.border
+  {
+    img
+    {
+      box-sizing: border-box;
+
+      //border: 1px solid $light-gray;
+    }
+  }
+}
+
+video
+{
+  max-width: 100%;
+}
+
+::selection
+{
+  background: $purple;
+  color: $white;
+}
+
+ul,
+ol
+{
+  margin: 0;
+  padding-left: 0;
+  li
+  {
+    box-sizing: border-box;
+  }
+}
+
+ul
+{
+  list-style: none;
+}
+
+input
+{
+  box-sizing: border-box;
+
+  &:focus
+  {
+    outline: none;
+  }
+}
+
+dd
+{
+  margin-left: 0;
+}
+
+sup
+{
+  top: -0.3em;
+}
+
+//.error-block
+//{
+//  max-width: 100%;
+//
+//  overflow: auto;
+//
+//  color: $red;
+//}
+//
+//.error
+//{
+//  color: $red;
+//}
+//
+//.yellow
+//{
+//  color: $yellow;
+//}
+//
+//.teal
+//{
+//  color: $teal;
+//}
+//
+//.purple
+//{
+//  color: $purple;
+//}
+//
+//.purple-bg,
+//.teal-bg,
+//.yellow-bg
+//{
+//  display: inline-block;
+//
+//  padding: 18px 27px;
+//}
+//
+//.teal-bg,
+//.yellow-bg
+//{
+//  color: $black;
+//}
+//
+//.purple-bg
+//{
+//  background-color: $purple;
+//  color: $white;
+//}
+//
+//.teal-bg
+//{
+//  background-color: $teal;
+//}
+//
+//.yellow-bg
+//{
+//  background-color: $yellow;
+//}
+//
+//hr
+//{
+//  margin-bottom: 80px;
+//
+//  border: 2px solid #e8e8e8;
+//
+//  @media($media-small)
+//  {
+//    margin-bottom: 40px;
+//  }
+//}
+//
+//.main-content
+//{
+//  overflow: hidden;
+//}
