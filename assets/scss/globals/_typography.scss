@@ -1,0 +1,27 @@
+@mixin t-level-1
+{
+  @include font-bungee-shade;
+
+  font-size: 24rem;
+  line-height: 22.7rem;
+
+  @media ($media-medium-down)
+  {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
+
+@mixin t-level-2
+{
+  @include font-mr-dafoe;
+
+  font-size: 24rem;
+  line-height: 22.7rem;
+
+  @media ($media-medium-down)
+  {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}

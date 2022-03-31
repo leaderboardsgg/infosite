@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'lbgg-infosite',
+    title: 'Infosite for leaderboards.gg',
     htmlAttrs: {
       lang: 'en',
     },
@@ -49,9 +49,11 @@ export default {
     download: true,
     families: {
       Inter: true,
-      Monoton: true,
+      Monofett: true,
       'Mr+Dafoe': true,
+      'Bungee+Shade': true,
     },
+    preload: true,
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

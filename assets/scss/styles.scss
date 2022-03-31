@@ -1,14 +1,9 @@
-
-// Mixins
-@import 'mixins/mixins';
-
-// Settings
-@import 'settings/variables';
-
-// Globals
+// GLOBALS //
+@import 'globals/variables';
+@import 'globals/mixins';
+@import 'globals/fonts';
 @import 'globals/typography';
-
-// Animations
-
-// Defaults
 @import 'globals/defaults';
+
+// LAYOUTS //
+@import 'layouts/synthwave/hero-banner';

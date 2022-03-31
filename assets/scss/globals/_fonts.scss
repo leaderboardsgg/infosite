@@ -1,0 +1,85 @@
+$ff-inter: Inter, sans-serif;
+$ff-monofett: Monofett, serif;
+$ff-bungee-shade: 'Bungee Shade', sans-serif;
+$ff-mr-dafoe: 'Mr Dafoe', cursive;
+
+
+@font-face
+{
+  font:
+  {
+    family: $ff-inter, sans-serif;
+    style: normal;
+    weight: 700;
+  }
+}
+
+@font-face
+{
+  font:
+  {
+    family: $ff-monofett, serif;
+    style: normal;
+    weight: 700;
+  }
+}
+
+@font-face
+{
+  font:
+  {
+    family: $ff-bungee-shade, serif;
+    style: normal;
+    weight: 700;
+  }
+}
+
+@font-face
+{
+  font:
+  {
+    family: $ff-mr-dafoe, cursive;
+    style: normal;
+    weight: 700;
+  }
+}
+
+@mixin font-inter
+{
+  font:
+  {
+    family: $ff-inter, sans-serif;
+    style: normal;
+    weight: 700;
+  }
+}
+
+@mixin font-monofett
+{
+  font:
+  {
+    family: $ff-monofett, serif;
+    style: normal;
+    weight: 700;
+  }
+}
+
+@mixin font-bungee-shade
+{
+  font:
+  {
+    family: $ff-bungee-shade, serif;
+    style: normal;
+    weight: 700;
+  }
+}
+
+@mixin font-mr-dafoe
+{
+  font:
+  {
+    family: $ff-mr-dafoe, serif;
+    style: normal;
+    weight: 700;
+  }
+}

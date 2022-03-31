@@ -1,0 +1,20 @@
+.layout-synthwave {
+  h1 {
+    font-size: 50px;
+    @include t-level-1;
+    background-image: $hero-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  h2 {
+    font-size: 50px;
+    @include t-level-2;
+  }
+
+  color: $white;
+  background: rgb(0, 0, 0);
+  background-image: $bg-gradient;
+}
+

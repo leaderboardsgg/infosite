@@ -1,13 +1,17 @@
 <template>
   <div class="layout-synthwave">
     <NavHeader />
+    <HeroBanner />
     <div>synthwave Layout</div>
     <Nuxt />
+    <Footer />
   </div>
 </template>
 <script>
+import Footer from "~/components/blocks/Footer"
 import NavHeader from "~/components/blocks/NavHeader";
+import HeroBanner from "~/components/blocks/HeroBanner"
 export default {
-  components: { NavHeader }
+  components: { HeroBanner, NavHeader, Footer }
 }
 </script>
