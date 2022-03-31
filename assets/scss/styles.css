@@ -141,34 +141,40 @@ sup {
   background: black;
   background-image: linear-gradient(to right, #141e30, #243b55);
 }
-.layout-synthwave h1 {
+.layout-synthwave .heading h1 {
+  justify-content: center;
+  display: flex;
+}
+.layout-synthwave .heading h1 .main {
   font-size: 50px;
   font-family: "Bungee Shade", sans-serif, serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24rem;
-  line-height: 22.7rem;
+  font-size: 10rem;
+  line-height: 12.7rem;
   background-image: linear-gradient(0deg, #860086 0%, #880afd 30%, #d7bdfc 40%, #e8d8ff 44%, #1b0c1c 44%, #1b0c1c 50%, #3f0767 52%, #8f1cfe 60%, #bd7ffe 62%, #c496fc 70%, #830ffa 73%, #870bfd 88%, #d1afff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #fff;
 }
 @media (max-width: 82em) {
-  .layout-synthwave h1 {
+  .layout-synthwave .heading h1 .main {
     font-size: 7rem;
     line-height: 8rem;
   }
 }
-.layout-synthwave h2 {
+.layout-synthwave .heading h1 .accent {
   font-size: 50px;
+  background-image: initial;
+  color: #F66CF7;
   font-family: "Mr Dafoe", cursive, serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24rem;
-  line-height: 22.7rem;
+  font-size: 12rem;
+  line-height: 12.7rem;
 }
 @media (max-width: 82em) {
-  .layout-synthwave h2 {
+  .layout-synthwave .heading h1 .accent {
     font-size: 7rem;
     line-height: 8rem;
   }

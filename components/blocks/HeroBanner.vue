@@ -15,7 +15,9 @@
       <path d="M1208.64,270.69h-756" fill="none" stroke="#CE5EAF"></path>
     </svg>
   </div>
-  <h1>Leaderboards<span>gg</span></h1>
+  <div class="heading">
+    <h1><div class="main">Leaderboards</div><div class="accent">gg</div></h1>
+  </div>
 </div>
 </template>
 
