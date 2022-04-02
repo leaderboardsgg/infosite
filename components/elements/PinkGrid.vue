@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "PinkGrid.vue"
+  name: "PinkGrid"
 };
 </script>
 

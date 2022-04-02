@@ -2,7 +2,6 @@
   <div class="layout-synthwave">
     <NavHeader />
     <HeroBanner />
-    <div>synthwave Layout</div>
     <Nuxt />
     <Footer />
   </div>

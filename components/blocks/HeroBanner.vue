@@ -1,7 +1,7 @@
 <template>
 <div class="hero-banner">
-  <div class="w-full overflow-hidden">
-    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1685.86 387.16">
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1685.86 387.16">
       <polygon points="1683.97 0.5 1005.34 386.66 645.6 386.66 1.81 0.5 1683.97 0.5" fill="none" stroke="#CE5EAF">
       </polygon>
       <path d="M282.17.5,705.55,386.66" fill="none" stroke="#CE5EAF"></path>

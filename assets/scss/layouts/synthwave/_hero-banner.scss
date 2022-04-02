@@ -4,6 +4,7 @@
   background-image: $bg-gradient;
 
   .heading{
+    margin-top: -70px;
     h1{
       justify-content: center;
       display: flex;
@@ -20,8 +21,8 @@
         background-image: initial;
         color: $shocking-pink;
         @include t-level-2;
+        margin-left: -30px;
       }
     }
   }
 }
-

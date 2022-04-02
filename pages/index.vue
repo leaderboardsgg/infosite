@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <HeroGrid/>
+      <PinkGrid/>
       <p>
         We are planning on creating an <i>open-sourced</i> speedrun leaderboard
         system!<br/>
@@ -64,10 +64,11 @@
 </template>
 
 <script>
+import PinkGrid from "@/components/elements/PinkGrid";
 
 export default {
   name: 'IndexPage',
-  components: { },
+  components: { PinkGrid },
   layout: 'Synthwave'
 }
 </script>

@@ -16,12 +16,12 @@
 {
   @include font-mr-dafoe;
 
-  font-size: 12rem;
-  line-height: 12.7rem;
+  font-size: 15rem;
+  line-height: 17.7rem;
 
   @media ($media-medium-down)
   {
-    font-size: 7rem;
-    line-height: 8rem;
+    font-size: 10rem;
+    line-height: 12rem;
   }
 }
