@@ -39,4 +39,5 @@ $bar3-top: $bar2-top * 2;
 .nav-overlay {
   top: $toggle-size / 2;
   left: $toggle-size / 2;
+  background-image: $nav-gradient;
 }

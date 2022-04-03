@@ -215,6 +215,7 @@ sup {
 .nav-overlay {
   top: 16px;
   left: 16px;
+  background-image: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,14 +1,14 @@
 <template>
   <div ref="nav-header" class="nav-header">
     <div class="nav-container">
-      <div ref="nav-overlay" class="nav-overlay open"></div>
-      <nav ref="nav-fullscreen" class="nav-fullscreen open">
+      <div ref="nav-overlay" v-bind:class="{ open: navOpen }" class="nav-overlay "></div>
+      <nav ref="nav-fullscreen" v-bind:class="{ open: navOpen }" class="nav-fullscreen ">
         <ul>
           <li><a href="https://discord.leaderboards.gg">Discord</a></li>
           <li><a href="https://github.com/leaderboardsgg">Github</a></li>
         </ul>
       </nav>
-      <a ref="nav-toggle" class="nav-toggle open" href=""><span></span><span></span><span></span></a>
+      <a ref="nav-toggle" v-on:click="toggleNav" v-bind:class="{ open: navOpen }" class="nav-toggle "><span></span><span></span><span></span></a>
     </div>
   </div>
 </template>
@@ -18,9 +18,27 @@ export default{
   name: 'NavHeader',
   data() {
     return {
-      windowDiag: Math.sqrt(Math.pow(window.innerHeight, 2) + Math.pow(window.innerWidth, 2))
+      windowHeight: 0,
+      windowDiagonal: 0,
+      windowWidth: 0,
+      navOpen: false,
     }
   },
+  mounted() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+  methods: {
+    handleResize() {
+      this.windowHeight = window.innerHeight;
+      this.windowWidth = window.innerWidth;
+      this.windowDiagonal = Math.sqrt(Math.pow(this.windowHeight, 2) + Math.pow(this.windowWidth, 2));
+
+    },
+    toggleNav() {
+      this.navOpen = !this.navOpen;
+    }
+  }
 }
 </script>
 
@@ -73,7 +91,7 @@ export default{
     .nav-overlay {
       position: absolute;
       z-index: -1;
-      background: rgba(0, 0, 0, 0.8);
+      //background: rgba(0, 0, 0, 0.8);
       border-radius: 50%;
       transition: 1s;
       transform: scale3d(0, 0, 0);
@@ -107,9 +125,6 @@ export default{
         transition: ease-in-out 0.5s;
         transition-delay: 0.25s;
       }
-    }
-    .nav-overlay{
-      background: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);
     }
     .nav-toggle span {
       background-color: white;
