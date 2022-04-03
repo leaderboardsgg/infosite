@@ -16,6 +16,11 @@
 <script>
 export default{
   name: 'NavHeader',
+  data() {
+    return {
+      windowDiag: Math.sqrt(Math.pow(window.innerHeight, 2) + Math.pow(window.innerWidth, 2))
+    }
+  },
 }
 </script>
 
