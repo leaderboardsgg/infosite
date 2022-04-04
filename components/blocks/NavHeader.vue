@@ -130,10 +130,7 @@ export default{
       background-color: white;
     }
     .nav-fullscreen {
-      //width: 100%;
       display: flex;
-      //top: 0;
-      //left: 0;
       align-items: center;
       justify-content: center;
 
