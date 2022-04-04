@@ -1,14 +1,14 @@
 <template>
   <div ref="nav-header" class="nav-header">
     <div class="nav-container">
-      <div ref="nav-overlay" v-bind:class="{ open: navOpen }" class="nav-overlay "></div>
-      <nav ref="nav-fullscreen" v-bind:class="{ open: navOpen }" class="nav-fullscreen ">
+      <div ref="nav-overlay" :class="{ open: navOpen }" :style="{ height: windowDiagonal * 2 + 'px', width: windowDiagonal * 2 + 'px', marginTop: -windowDiagonal + 'px', marginLeft: -windowDiagonal + 'px'  }" class="nav-overlay "></div>
+      <nav ref="nav-fullscreen" :class="{ open: navOpen }" :style="{ height: windowHeight + 'px' }" class="nav-fullscreen ">
         <ul>
           <li><a href="https://discord.leaderboards.gg">Discord</a></li>
           <li><a href="https://github.com/leaderboardsgg">Github</a></li>
         </ul>
       </nav>
-      <a ref="nav-toggle" v-on:click="toggleNav" v-bind:class="{ open: navOpen }" class="nav-toggle "><span></span><span></span><span></span></a>
+      <a ref="nav-toggle" :class="{ open: navOpen }" class="nav-toggle" @click="toggleNav" ><span></span><span></span><span></span></a>
     </div>
   </div>
 </template>
@@ -33,7 +33,6 @@ export default{
       this.windowHeight = window.innerHeight;
       this.windowWidth = window.innerWidth;
       this.windowDiagonal = Math.sqrt(Math.pow(this.windowHeight, 2) + Math.pow(this.windowWidth, 2));
-
     },
     toggleNav() {
       this.navOpen = !this.navOpen;
@@ -47,8 +46,9 @@ export default{
   outline: 1px solid palevioletred;
   display: flex;
   padding: 16px;
-  overflow: hidden;
   color: white;
+  top: 0;
+  position: sticky;
 
   .nav-container {
     margin-left: auto;
@@ -90,8 +90,7 @@ export default{
     }
     .nav-overlay {
       position: absolute;
-      z-index: -1;
-      //background: rgba(0, 0, 0, 0.8);
+      z-index: 0;
       border-radius: 50%;
       transition: 1s;
       transform: scale3d(0, 0, 0);
@@ -100,10 +99,11 @@ export default{
       }
     }
     .nav-fullscreen {
-      width: 100%;
       position: fixed;
       left: 0;
       top: 0;
+      bottom: 0;
+      right: 0;
 
       transition: ease-in-out 0.25s;
       transition-delay: 0s;
@@ -130,7 +130,10 @@ export default{
       background-color: white;
     }
     .nav-fullscreen {
+      //width: 100%;
       display: flex;
+      //top: 0;
+      //left: 0;
       align-items: center;
       justify-content: center;
 
