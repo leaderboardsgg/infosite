@@ -18,11 +18,11 @@ Other Links:
 - [Vue Readme](#vue-readme)
 
 ## Introduction
-Leaderboards.gg (lbgg) was sparked by the purchase of speedrun.com by the esports company ELO. In it we see an opportunity to help the speedrunning community continue to grow and thrive with tools built to scale, on newer technologies, without it being monetized. Because its open source, the community owns it and can use it as they wish.
+Leaderboards.gg (lbgg) was sparked by the purchase of speedrun.com by the esports data analytics company Elo Entertainment. In lbgg we see an opportunity to help the community continue to grow and thrive with tools (a website, an API) built to scale, on newer technologies, curated to what its users want, without it being monetized. Because its open source, the community owns it and can use it as they wish.
 
 Another huge opportunity we see is being able to handle score based runs on our leaderboards, in addition to time based.
 
-Because it is under construction (and in two separate repos), I am using this repo to represent the project as a whole.
+Because it is currently under construction (and in two separate repos), we are using this repo to represent the project as a whole.
 
 ## Technologies
 - Frontend
