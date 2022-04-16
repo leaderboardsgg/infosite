@@ -15,6 +15,7 @@ Other Links:
 - [Technologies](#technologies)
 - [Build Setup](#build-setup)
 - [Status](#status)
+- [Repo Structure](#repo-structure)
 - [Vue Readme](#vue-readme)
 
 ## Introduction
@@ -50,6 +51,13 @@ $ npm run generate
 ```
 
 ## Status
+
+## Repo Structure 
+(subject to change)
+
+Component styles with variables are in assets/scss/layouts (and then separated by layout)
+Global styles are in assets/scss/globals
+SVGs are in assets/sprite/svg
 
 # Vue Readme
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
