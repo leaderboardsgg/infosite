@@ -1,17 +1,36 @@
-# Leaderboards.gg Info Site
-
+# info.leaderboards.gg - Info Site Subdomain
 This is the repo for the current info-site sitting at https://info.leaderboards.gg
 
 ### References
 
-Other Repos:
-
-- Main Site - https://github.com/leaderboardsgg/leaderboard-site
-- Backend - https://github.com/leaderboardsgg/leaderboard-backend-poc
+Our Other Repos:
+- leaderboards.gg Main Site - https://github.com/leaderboardsgg/leaderboard-site
+- leaderboards.gg Backend - https://github.com/leaderboardsgg/leaderboard-backend-poc
 
 Other Links:
-
 - Discord - https://discord.leaderboards.gg
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Build Setup](#build-setup)
+- [Status](#status)
+- [Vue Readme](#vue-readme)
+
+## Introduction
+Leaderboards.gg (lbgg) was sparked by the purchase of speedrun.com by the esports company ELO. In it we see an opportunity to help the speedrunning community continue to grow and thrive with tools built to scale, on newer technologies, without it being monetized. Because its open source, the community owns it and can use it as they wish.
+
+Another huge opportunity we see is being able to handle score based runs on our leaderboards, in addition to time based.
+
+Because it is under construction (and in two separate repos), I am using this repo to represent the project as a whole.
+
+## Technologies
+- Frontend
+- Backend
+- Info site
+  - Nuxt.js
+  - Vue 2
+  - SCSS
 
 ## Build Setup
 
@@ -30,6 +49,9 @@ $ npm run start
 $ npm run generate
 ```
 
+## Status
+
+# Vue Readme
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories
