@@ -1,6 +1,5 @@
 #__nuxt {
   background-color: black;
-  color: $turquoise;
 }
 
 body {
@@ -11,7 +10,7 @@ html
 {
   box-sizing: border-box;
 
-  color: $black;
+  color: $white;
   //browser font size hack for accessibility to make rem multiple of 10's eg. 1rem = 10px
 
   font-size: 62.5%;
@@ -103,17 +102,9 @@ a
     p &,
     .accordion li &
     {
-      //@include animate;
-
-      border-bottom: 1px dotted $black;
-
-      color: $black;
-      &:hover
-      {
-        border-bottom-color: $purple;
-
-        color: $purple;
-      }
+      @include animate;
+      text-decoration: none;
+      @include link-hover;
     }
   }
 }

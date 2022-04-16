@@ -5,39 +5,42 @@ $bar-space: ($toggle-size - ($bar-size * 5)) / 2;
 $bar2-top: $bar-size + $bar-space;
 $bar3-top: $bar2-top * 2;
 
-.nav-toggle {
-  width: $toggle-size;
-  height: $toggle-size;
-  span {
-    height: $bar-size;
-    border-radius: $bar-size / 4;
-    &:nth-child(1) {
-      top: $bar-size;
-    }
-    &:nth-child(2) {
-      top: $bar2-top + $bar-size;
-    }
-    &:nth-child(3) {
-      top: $bar3-top + $bar-size;
-    }
-  }
-  &.open{
+.nav-header{
+  outline: 1px solid $turquoise;
+  .nav-toggle {
+    width: $toggle-size;
+    height: $toggle-size;
     span {
+      height: $bar-size;
+      border-radius: $bar-size / 4;
       &:nth-child(1) {
-        transform: rotate(45deg);
+        top: $bar-size;
       }
       &:nth-child(2) {
         top: $bar2-top + $bar-size;
       }
       &:nth-child(3) {
-        top: $bar3-top + ($toggle-size / 32) + $bar-size;
-        left: $bar-size;
+        top: $bar3-top + $bar-size;
+      }
+    }
+    &.open{
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          top: $bar2-top + $bar-size;
+        }
+        &:nth-child(3) {
+          top: $bar3-top + ($toggle-size / 32) + $bar-size;
+          left: $bar-size;
+        }
       }
     }
   }
-}
-.nav-overlay {
-  top: $toggle-size / 2;
-  left: $toggle-size / 2;
-  background-image: $nav-gradient;
+  .nav-overlay {
+    top: $toggle-size / 2;
+    left: $toggle-size / 2;
+    background-image: $nav-gradient;
+  }
 }

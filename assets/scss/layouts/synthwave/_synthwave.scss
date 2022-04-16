@@ -1,0 +1,12 @@
+.page {
+  margin: 0 20px;
+  @include t-copy;
+  .intro {
+    @include t-intro;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  p{
+    margin: 15px 0;
+  }
+}

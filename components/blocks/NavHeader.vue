@@ -43,7 +43,6 @@ export default{
 
 <style scoped lang="scss">
 .nav-header {
-  outline: 1px solid palevioletred;
   display: flex;
   padding: 16px;
   color: white;

@@ -5,8 +5,11 @@
   font-size: 10rem;
   line-height: 12.7rem;
 
-  @media ($media-medium-down)
-  {
+  @media ($media-small){
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  @media ($media-medium){
     font-size: 7rem;
     line-height: 8rem;
   }
@@ -19,9 +22,28 @@
   font-size: 15rem;
   line-height: 17.7rem;
 
-  @media ($media-medium-down)
-  {
+  @media ($media-small){
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  @media ($media-medium){
     font-size: 10rem;
     line-height: 12rem;
   }
+
+}
+
+@mixin t-intro
+{
+  @include font-inter;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+@mixin t-copy
+{
+  @include font-inter;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }

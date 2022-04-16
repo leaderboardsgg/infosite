@@ -1,21 +1,19 @@
 <template>
-  <div>
+  <div class="page">
+    <HeroBanner />
+    <h3 class="intro">Open Source. Community Built. Community Kept.</h3>
     <div>
       <p>
-        We are planning on creating an <i>open-sourced</i> speedrun leaderboard
-        system!<br/>
-        Currently development is still on-going and won't be anything outward
-        facing (yet...)<br/>
-        You can also join the
-        <a href="https://discord.gg/k7nCKsxmht">Discord</a> in order to keep
-        updated with the devel opment status!
+        We are working on an <i>open-sourced</i> leaderboard system!<br/>
+        The best place to find us is our <a href="https://discord.leaderboards.gg">Discord</a>, so feel free to join in order to keep
+        updated with the development status!
       </p>
 
       <h3>Our Mission</h3>
       <p>
         This project was started with the goal of improving the speedrun
         community as a whole. Ever since the beginning of
-        <a href="https://speedrun.com">speedrun.com</a>, people have had many
+        <a href="https://speedrun.com" class="glitch">speedrun.com</a>, people have had many
         complaints and ideas for improvements. Many of the issues stemmed from
         bad user experience (especially leaderboard moderators). This project
         started with the idea that if someone started up a project for a new
@@ -63,9 +61,12 @@
 </template>
 
 <script>
+import HeroBanner from "@/components/blocks/HeroBanner";
 
 export default {
   name: 'IndexPage',
+  components: { HeroBanner },
+
   layout: 'Synthwave'
 }
 </script>
