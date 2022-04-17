@@ -4,9 +4,25 @@
   .intro {
     @include t-intro;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
   p{
     margin: 15px 0;
+  }
+  .cta-links{
+    .link{
+      //outline: 0px solid $white;
+      //@include animate;
+      &:hover{
+        //outline: 1px solid $white;
+      }
+      padding: 25px;
+    }
+
+    a.button{
+      &:hover {
+        box-shadow: $button-shadow;
+      }
+    }
   }
 }

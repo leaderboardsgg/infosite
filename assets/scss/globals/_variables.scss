@@ -16,6 +16,7 @@ $turquoise: #2de2e6;
 $gold: #f9c80e;
 $magic-potion: #ff4365;
 
+
 //gradients
 $hero-gradient: linear-gradient(0deg, rgba(134, 0, 134, 1) 0%, rgba(136, 10, 253, 1) 30%, rgba(215, 189, 252, 1) 40%, rgba(232, 216, 255, 1) 44%, rgba(27, 12, 28, 1) 44%, rgba(27, 12, 28, 1) 50%, rgba(63, 7, 103, 1) 52%, rgba(143, 28, 254, 1) 60%, rgba(189, 127, 254, 1) 62%, rgba(196, 150, 252, 1) 70%, rgba(131, 15, 250, 1) 73%, rgba(135, 11, 253, 1) 88%, rgba(209, 175, 255, 1) 100%);
 $bg-gradient: linear-gradient(to right, #141e30, #243b55);
@@ -24,6 +25,15 @@ $blue-hero-gradient: linear-gradient(0deg, rgba(0, 70, 134, 1) 0%, rgba(0, 253, 
 $coral-gradient: linear-gradient(to right, #ff9966, #ff5e62);
 $vibrant-gradient: linear-gradient(90deg, #00ffee, #00f1ff, #00e0ff, #00caff, #3cadff, #a989ff, #e35ae4, #ff00a2);
 $nav-gradient: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);
+
+$button-shadow: -4px -4px 0 #0ff,4px 4px 0 #f0f;
+//$button-ring-inset: 5;
+
+$button-ring-offset-width: 0px;
+$button-ring-offset-color: #fff;
+$button-ring-color: rgba(59,130,246,0.5);
+$button-ring-offset-shadow: 0 0 transparent;
+$button-ring-shadow: 0 0 transparent;
 
 
 //animation colors

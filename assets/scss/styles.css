@@ -169,10 +169,16 @@ sup {
   line-height: 3rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .page p {
   margin: 15px 0;
+}
+.page .cta-links .link {
+  padding: 25px;
+}
+.page .cta-links a.button:hover {
+  box-shadow: -4px -4px 0 #0ff, 4px 4px 0 #f0f;
 }
 
 .layout-synthwave {
