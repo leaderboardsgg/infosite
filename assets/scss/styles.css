@@ -180,6 +180,9 @@ sup {
 .page .cta-links a.button:hover {
   box-shadow: -4px -4px 0 #0ff, 4px 4px 0 #f0f;
 }
+.page .accordion-item:hover {
+  box-shadow: -4px -4px 0 #0ff, 4px 4px 0 #f0f;
+}
 
 .layout-synthwave {
   color: #fff;

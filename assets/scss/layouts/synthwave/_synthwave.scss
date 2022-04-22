@@ -25,4 +25,9 @@
       }
     }
   }
+  .accordion-item{
+    &:hover {
+      box-shadow: $button-shadow;
+    }
+  }
 }

@@ -1,7 +1,14 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  mode: 'universal',
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/content
+    '@nuxt/content',
+    //  https://codesandbox.io/s/github/nuxt-community/svg-sprite-module/
+    '@nuxtjs/svg-sprite',
+  ],
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Infosite for leaderboards.gg',
@@ -57,13 +64,6 @@ export default {
     },
     preload: true,
   },
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content',
-    //  https://codesandbox.io/s/github/nuxt-community/svg-sprite-module/
-    '@nuxtjs/svg-sprite',
-  ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
