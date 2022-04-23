@@ -4,6 +4,7 @@
     <h3 class="intro">Open Source. Community Built. Community Kept.</h3>
     <div>
       <CtaLinks />
+      <AccordionMvp />
     </div>
     Leaderboards.gg
     Open Source. Community Built. Community Kept.
@@ -26,10 +27,11 @@
 <script>
 import HeroBanner from "@/components/blocks/HeroBanner";
 import CtaLinks from "@/components/blocks/CtaLinks";
+import AccordionMvp from "@/components/blocks/AccordionMvp";
 
 export default {
   name: 'IndexPage',
-  components: { HeroBanner, CtaLinks },
+  components: { HeroBanner, CtaLinks, AccordionMvp },
 
   layout: 'Synthwave'
 }
