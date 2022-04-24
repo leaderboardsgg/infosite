@@ -27,6 +27,10 @@ body {
   margin: 0;
 }
 
+body.nav--open {
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
   color: #fff;
