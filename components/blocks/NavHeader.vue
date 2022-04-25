@@ -35,6 +35,7 @@ export default{
       this.windowDiagonal = Math.sqrt(Math.pow(this.windowHeight, 2) + Math.pow(this.windowWidth, 2));
     },
     toggleNav() {
+      document.body.classList.toggle('nav--open');
       this.navOpen = !this.navOpen;
     }
   }
