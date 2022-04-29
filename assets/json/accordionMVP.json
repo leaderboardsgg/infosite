@@ -1,0 +1,147 @@
+{
+   "accordItems": [
+   {
+     "heading": "You",
+     "content": [
+       {
+         "title": "(MVP) The site should present multiple options for account creation and authentication.",
+         "detail": [
+           "Why? Allowing users to choose from a variety of options reduces friction in the account creation process.",
+           "Options should include a normal email + username + password, Oauth via Discord, Twitch, Twitter, etc.."
+         ],
+         "link": "https://trello.com/c/1wwCguoC"
+       },
+       {
+         "title": "(MVP) Users should be able to, in their account settings, have a field for giving their pronouns if they wish. This should ideally be an arbitrary text field, rather than being limited to a list of options.",
+         "detail": [
+           "Why? Allowing users to state their pronouns is important to respectful communication with and about other users.",
+           "Providing an arbitrary textfield is most inclusive towards those who prefer less common sets of pronouns and neopronouns",
+           "A valid concern with arbitrary text is abuse from malicious users. Of course, this comes with literally any kind of text, from usernames to run descriptions. The pronoun field would need to be moderated similarly. Those who abuse it would be restricted from using it or banned site-wide, depending on severity."
+         ],
+         "link": "https://trello.com/c/2QCccraT"
+       },
+       {
+         "title": "(MVP OR V1) Provide users with the option to switch between multiple “themes” / color schemes for the site.",
+         "detail": [
+           "Why? In many communities, certain files associated with a submission are necessary for verification. This can include movie/demo files, world files, config files, etc.",
+           "Currently, communities that require these kinds of files for submissions are forced to rely on external hosting services. Building this feature into lbgg would not only streamline the submission process, but make leaderboards more robust to loss of information when these hosting services change policy or go offline."
+         ],
+         "link": "https://trello.com/c/VkFLBlv6"
+       }
+     ]
+   },
+   {
+     "heading": "Runners",
+     "content": [
+       {
+         "title": "(MVP) Allow users to submit files with their runs/submissions.",
+         "detail": [
+           "Why? In many communities, certain files associated with a submission are necessary for verification. This can include movie/demo files, world files, config files, etc.",
+           "Currently, communities that require these kinds of files for submissions are forced to rely on external hosting services. Building this feature into lbgg would not only streamline the submission process, but make leaderboards more robust to loss of information when these hosting services change policy or go offline."
+         ],
+         "link": "https://trello.com/c/VkFLBlv6"
+       }
+     ]
+   },
+   {
+     "heading": "Mods",
+     "content": []
+   },
+   {
+     "heading": "Site Mods",
+     "content": [
+       {
+         "title": "(MVP) Some users should be selected as sitewide moderators to resolve issues that cannot be handled within a single community.",
+         "detail": [
+           "Why? In cases where ownership/representation of a community is disputed, or an issue affects multiple communities, an impartial authority is needed to hear arguments and make fair decisions. When disputes aren’t handled appropriately, communities often end up fracturing and shrinking.",
+           "Sitewide moderators would have a lot of power and thus require a commensurate level of accountability."
+         ],
+         "link": "https://trello.com/c/VkFLBlv6"
+       }
+     ]
+   },
+   {
+     "heading": "Leaderboard Owners",
+     "content": [
+       {
+         "title": "(MVP) Leaderboard owners must be able to set a category to be sorted by score, or other criteria besides time",
+         "detail": [
+           "Why? One major goal of lbgg has been to include both the high-score community and the speedrunning community. Thus, score should be a first-class criterion, alongside time.",
+           "Ideally, board owners should be able to include and sort-by whatever columns they like in a leaderboard.",
+           "Sorting ascending or descending should be possible.",
+           "It should be possible to sort by multiple columns at once, with a defined priority. For example, a low% leaderboard may want to sort by an “Item count” or “Completion Percentage” column as first priority, and then sort by time when multiple runs are tied. A max% board would be the same, except with completion sorted descending instead of ascending.",
+           "This should be able to be defined both as a default for an entire board, and individually on a per-category basis."
+         ],
+         "link": "https://trello.com/c/ZQcTWh7t"
+       },
+       {
+         "title": "(MVP OR V1) Allow leaderboard owners to organize categories onto separate pages/groups. Instead of predefined Individual Level and Category Extensions boards, board owners would be able to create such pages as needed.",
+         "detail": [
+           "Why? The existing board types are restrictive given the massive variety among communities, and don’t cover a lot of use cases. With this feature, boards could start with a “Main Categories” page, and then allow lb owners to add e.g. ILs, Minigames, Memes, Time Trials, Championships, Archived, etc."
+         ],
+         "link": "https://trello.com/c/Kz30XCNM"
+       },
+       {
+         "title": "(MVP OR V1) Allow leaderboard owners to lock/archive individual categories, blocking further submissions.",
+         "detail": [
+           "Why? In some cases, a category may become outdated (e.g. due to a change in timing, patching, rules changes, etc.). If a user doesn’t realize that a category is defunct, they may submit to it. Mods would then have to reject the run, wasting everybody’s time. Locking a category/board would prevent this"
+         ],
+         "link": "https://trello.com/c/6KXo1t4n"
+       },
+       {
+         "title": "(MVP OR V1) Variables and sub-categories should be able to be assigned to arbitrary sets of categories.",
+         "detail": [
+           "Why? On sr.c, currently, variables are assigned to either all categories or just one category. This is needlessly clunky. We can avoid this, making it easier for board owners to configure things."
+         ],
+         "link": "https://trello.com/c/mEUeaaMO"
+       },
+       {
+         "title": "(MVP OR V1) Board owners should be able to easily reorder categories/levels via drag-and-drop",
+         "detail": [
+           "Why? The order of categories is important to how users navigate a board. Board owners may want to change things for various reasons, such as to highlight more popular categories, which can change over time."
+         ],
+         "link": "https://trello.com/c/WdlbvTKi"
+       }
+     ]
+   },
+   {
+     "heading": "Communities",
+     "content": []
+   },
+   {
+     "heading": "Developers",
+     "content": [
+       {
+         "title": "(MVP) The site must provide a robust, well-documented API for developers to use when creating software to interact with the site.",
+         "detail": [
+           "Why? It’s common for passionate community members to develop all sorts of software to interact with content sites. This may include things like Discord bots to track leaderboard updates, auto-moderator bots, scripts to gather data and provide statistical info, etc.. Good documentation is necessary to encourage this."
+         ]
+       }
+     ]
+   },
+   {
+     "heading": "Other Leaderboard Sites",
+     "content": [
+       {
+         "title": "(MVP) Allow owners of other leaderboard sites to easily set an auto redirect from their page on lbgg.",
+         "detail": [
+           "Why? We want to build what users and communities are asking for. We haven't reached out to any other sites, but think the very least we can offer is a 1:1 redirect from our site to theirs. "
+         ]
+       }
+     ]
+   },
+   {
+     "heading": "Our Contributors",
+     "content": [
+       {
+         "title": "There should be a “Thanks” section of the site dedicated to thanking contributors to the project.",
+         "detail": [
+           "Why? As an open-source project, lbgg owes its existence to contributors. Publicly crediting them is the least we can offer in return.",
+           "This should include developers, donors, and those who’ve provided feedback and ideas to the site."
+         ],
+         "link": "https://trello.com/c/Pd0NRioC"
+       }
+     ]
+   }
+ ]
+ }

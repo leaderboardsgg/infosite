@@ -27,10 +27,6 @@ body {
   margin: 0;
 }
 
-body.nav--open {
-  overflow: hidden;
-}
-
 html {
   box-sizing: border-box;
   color: #fff;
@@ -175,9 +171,6 @@ sup {
   text-align: center;
   margin-bottom: 50px;
 }
-.page p {
-  margin: 15px 0;
-}
 .page .cta-links .link {
   padding: 25px;
 }
@@ -191,7 +184,7 @@ sup {
 .layout-synthwave {
   color: #fff;
   background: black;
-  background-image: linear-gradient(to right, #141e30, #243b55);
+  background-image: linear-gradient(to right, #141e30, #000);
 }
 .layout-synthwave .heading {
   margin-top: -70px;

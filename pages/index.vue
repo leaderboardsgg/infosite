@@ -6,13 +6,6 @@
       <CtaLinks />
       <AccordionMvp />
     </div>
-    Leaderboards.gg
-    Open Source. Community Built. Community Kept.
-    OUTLINE - LINK TO DISCORD
-    The best place to find and talk to us is our discord! discord.leaderboards.gg
-    OUTLINE - LINK TO GITHUB
-    Check out our code! -
-    OUTLINE - MVP ACCORDION
     OUTLINE - TECH STACK
     OUTLINE - WHY IS THIS GOING TO WORK?
     OUTLINE - WHAT COULD GET IN OUR WAY?

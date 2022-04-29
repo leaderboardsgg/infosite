@@ -6,6 +6,7 @@
         <ul>
           <li><a href="https://discord.leaderboards.gg">Discord</a></li>
           <li><a href="https://github.com/leaderboardsgg">Github</a></li>
+          <li><a href="https://opencollective.com/leaderboardsgg">Donate</a></li>
         </ul>
       </nav>
       <a ref="nav-toggle" :class="{ open: navOpen }" class="nav-toggle" @click="toggleNav" ><span></span><span></span><span></span></a>
