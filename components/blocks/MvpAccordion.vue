@@ -5,8 +5,8 @@
       <BaseAccordion>
         <template #title>{{ accordion.heading }}</template>
         <template #content>
-          <div v-for="mvpItem in accordion.content" :key="mvpItem.title">
-            <h3>-{{ mvpItem.title }}</h3>
+          <div v-for="mvpItem in accordion.content" :key="mvpItem.title" class="mvpItem">
+            <h3>{{ mvpItem.title }}</h3>
             <p v-for="detail in mvpItem.detail" :key="detail">{{ detail }}</p>
             <a v-if="mvpItem.link" :href="mvpItem.link">Trello Card</a>
           </div>
@@ -34,14 +34,18 @@ export default {
 h2{
   margin-bottom: 4rem;
 }
-h3{
-  margin-bottom: 1rem;
+.mvpItem {
+  padding: 25px;
+  h3{
+    margin-bottom: 1rem;
+  }
+  p{
+    margin-bottom: 1rem;
+  }
+  a {
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
 }
-p{
-  margin-bottom: 1rem;
-}
-a {
-  margin-bottom: 2rem;
-  display: inline-block;
-}
+
 </style>

@@ -38,12 +38,14 @@ export default {
     border-width: 1px 1px 1px 1px;
     border-color: skyblue;
     border-style: solid;
+    &:hover{
+      cursor: pointer;
+    }
     .accordion-item__heading{
       padding: 25px;
     }
     .accordion-item__content{
       opacity: 0;
-      padding: 25px;
       height: 0;
       a{
         border-width: 2px;
