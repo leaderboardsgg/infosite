@@ -311,4 +311,8 @@ sup {
   background-image: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);
 }
 
+body.nav--open {
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=styles.css.map */
