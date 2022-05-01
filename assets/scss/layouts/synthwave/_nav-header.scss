@@ -44,3 +44,6 @@ $bar3-top: $bar2-top * 2;
     background-image: $nav-gradient;
   }
 }
+body.nav--open {
+  overflow: hidden;
+}
