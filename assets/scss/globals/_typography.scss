@@ -2,8 +2,8 @@
 {
   @include font-bungee-shade;
 
-  font-size: 10rem;
-  line-height: 12.7rem;
+  font-size: 12rem;
+  line-height: 13rem;
 
   @media ($media-small){
     font-size: 4rem;
@@ -30,9 +30,13 @@
     font-size: 10rem;
     line-height: 12rem;
   }
-
 }
 
+@mixin t-level-3
+{
+  @include font-inter;
+  font-size: 2.5rem;
+}
 @mixin t-intro
 {
   @include font-inter;

@@ -7,6 +7,7 @@
     margin-bottom: 50px;
   }
   .cta-links{
+    margin-bottom: 50px;
     .link{
       //outline: 0px solid $white;
       //@include animate;
@@ -23,8 +24,24 @@
     }
   }
   .accordion-item{
-    &:hover {
+    &__heading{
+      @include animate;
+      @include t-level-3;
+      text-align: center;
+    }
+    &__content{
+      @include t-copy;
+      a {
+        @include animate;
+      }
+    }
+    &.active {
       box-shadow: $button-shadow;
+    }
+    &:hover {
+      z-index: 2;
+      box-shadow: $button-shadow;
+      border-bottom: 1px solid plum;
     }
   }
 }

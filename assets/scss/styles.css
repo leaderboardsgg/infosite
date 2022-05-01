@@ -171,14 +171,40 @@ sup {
   text-align: center;
   margin-bottom: 50px;
 }
+.page .cta-links {
+  margin-bottom: 50px;
+}
 .page .cta-links .link {
   padding: 25px;
 }
 .page .cta-links a.button:hover {
   box-shadow: -4px -4px 0 #0ff, 4px 4px 0 #f0f;
 }
-.page .accordion-item:hover {
+.page .accordion-item__heading {
+  transition: 250ms;
+  font-family: Inter, sans-serif, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.page .accordion-item__content {
+  font-family: Inter, sans-serif, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.page .accordion-item__content a {
+  transition: 250ms;
+}
+.page .accordion-item.active {
   box-shadow: -4px -4px 0 #0ff, 4px 4px 0 #f0f;
+}
+.page .accordion-item:hover {
+  z-index: 2;
+  box-shadow: -4px -4px 0 #0ff, 4px 4px 0 #f0f;
+  border-bottom: 1px solid plum;
 }
 
 .layout-synthwave {
@@ -202,8 +228,8 @@ sup {
   font-family: "Bungee Shade", sans-serif, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 10rem;
-  line-height: 12.7rem;
+  font-size: 12rem;
+  line-height: 13rem;
   background-image: linear-gradient(0deg, #860086 0%, #880afd 30%, #d7bdfc 40%, #e8d8ff 44%, #1b0c1c 44%, #1b0c1c 50%, #3f0767 52%, #8f1cfe 60%, #bd7ffe 62%, #c496fc 70%, #830ffa 73%, #870bfd 88%, #d1afff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

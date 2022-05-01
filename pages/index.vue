@@ -4,7 +4,7 @@
     <h3 class="intro">Open Source. Community Built. Community Kept.</h3>
     <div>
       <CtaLinks />
-      <AccordionMvp />
+      <MvpAccordion />
     </div>
     OUTLINE - TECH STACK
     OUTLINE - WHY IS THIS GOING TO WORK?
@@ -20,11 +20,12 @@
 <script>
 import HeroBanner from "@/components/blocks/HeroBanner";
 import CtaLinks from "@/components/blocks/CtaLinks";
-import AccordionMvp from "@/components/blocks/AccordionMvp";
+import MvpAccordion from "@/components/blocks/MvpAccordion";
+
 
 export default {
   name: 'IndexPage',
-  components: { HeroBanner, CtaLinks, AccordionMvp },
+  components: { HeroBanner, CtaLinks, MvpAccordion },
 
   layout: 'Synthwave'
 }

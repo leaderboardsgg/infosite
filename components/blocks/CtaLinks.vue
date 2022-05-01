@@ -21,6 +21,11 @@ export default {
 .cta-links {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
   .link{
     h3{
       width: 170px;
@@ -32,17 +37,19 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     height: 80px;
     & .button {
       display: inline-flex;
-      padding: 0.75rem 1.5rem;
+      padding: 2rem 10rem;
+      margin-top: 2rem;
       transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
       transition-duration: 500ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       color: #ffffff;
       font-size: 1.5rem;
       line-height: 1.5rem;
+      letter-spacing: 1px;
       font-weight: 600;
       text-transform: uppercase;
       align-items: center;
@@ -53,6 +60,7 @@ export default {
 
       @media (min-width: 768px) {
         margin-bottom: 0.5rem;
+
       }
       @media (min-width: 1024px) {
         margin-bottom: 0;
