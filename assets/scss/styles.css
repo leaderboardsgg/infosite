@@ -10,6 +10,16 @@
   font-weight: 700;
 }
 @font-face {
+  font-family: Share, sans-serif, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lekton, serif, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
   font-family: "Bungee Shade", sans-serif, serif;
   font-style: normal;
   font-weight: 700;
@@ -155,14 +165,14 @@ sup {
 
 .page {
   margin: 0 20px;
-  font-family: Inter, sans-serif, sans-serif;
+  font-family: Lekton, serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 .page .intro {
-  font-family: Inter, sans-serif, sans-serif;
+  font-family: Share, sans-serif, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.4rem;
@@ -182,14 +192,14 @@ sup {
 }
 .page .accordion-item__heading {
   transition: 250ms;
-  font-family: Inter, sans-serif, sans-serif;
+  font-family: Share, sans-serif, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
   text-align: center;
 }
 .page .accordion-item__content {
-  font-family: Inter, sans-serif, sans-serif;
+  font-family: Lekton, serif, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;

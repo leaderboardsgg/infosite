@@ -34,12 +34,12 @@
 
 @mixin t-level-3
 {
-  @include font-inter;
+  @include font-share;
   font-size: 2.5rem;
 }
 @mixin t-intro
 {
-  @include font-inter;
+  @include font-share;
   font-size: 2.4rem;
   line-height: 3rem;
   font-weight: 600;
@@ -47,7 +47,7 @@
 
 @mixin t-copy
 {
-  @include font-inter;
+  @include font-lekton;
   font-size: 1.5rem;
   line-height: 2rem;
 }
