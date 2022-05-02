@@ -5,15 +5,8 @@
     <div>
       <CtaLinks />
       <MvpAccordion />
+      <InfoAccordion />
     </div>
-    OUTLINE - TECH STACK
-    OUTLINE - WHY IS THIS GOING TO WORK?
-    OUTLINE - WHAT COULD GET IN OUR WAY?
-    OUTLINE - WHY ARE YOU DOING IT?
-    OUTLINE - HOW ARE YOU GOING TO PAY FOR IT?
-    OUTLINE - WHO ARE WE? WHO IS IN CHARGE?
-    OUTLINE - I WANT TO HELP/ I HAVE IDEAS/ I HAVE CONNECTIONS
-    OUTLINE - ORIGINAL PASTEBIN MISSION STATEMENT
   </div>
 </template>
 
@@ -21,11 +14,12 @@
 import HeroBanner from "@/components/blocks/HeroBanner";
 import CtaLinks from "@/components/blocks/CtaLinks";
 import MvpAccordion from "@/components/blocks/MvpAccordion";
+import InfoAccordion from "@/components/blocks/InfoAccordion";
 
 
 export default {
   name: 'IndexPage',
-  components: { HeroBanner, CtaLinks, MvpAccordion },
+  components: { HeroBanner, CtaLinks, MvpAccordion, InfoAccordion },
 
   layout: 'Synthwave'
 }

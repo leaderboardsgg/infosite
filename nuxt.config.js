@@ -59,6 +59,8 @@ export default {
     families: {
       Inter: true,
       Monofett: true,
+      Share: true,
+      Lekton: true,
       'Mr+Dafoe': true,
       'Bungee+Shade': true,
     },

@@ -28,7 +28,7 @@ export default {
   }
   .link{
     h3{
-      width: 170px;
+      width: 250px;
       text-align: center;
     }
     margin-top: 1rem;

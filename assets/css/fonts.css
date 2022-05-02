@@ -78,12 +78,28 @@
   src: url('~assets/fonts/Inter-400-latin10.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Lekton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~assets/fonts/Lekton-400-latin-ext11.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lekton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~assets/fonts/Lekton-400-latin12.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 /* latin */
 @font-face {
   font-family: 'Monofett';
   font-style: normal;
   font-weight: 400;
-  src: url('~assets/fonts/Monofett-400-latin11.woff2') format('woff2');
+  src: url('~assets/fonts/Monofett-400-latin13.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin-ext */
@@ -91,7 +107,7 @@
   font-family: 'Mr Dafoe';
   font-style: normal;
   font-weight: 400;
-  src: url('~assets/fonts/Mr_Dafoe-400-latin-ext12.woff2') format('woff2');
+  src: url('~assets/fonts/Mr_Dafoe-400-latin-ext14.woff2') format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -99,6 +115,22 @@
   font-family: 'Mr Dafoe';
   font-style: normal;
   font-weight: 400;
-  src: url('~assets/fonts/Mr_Dafoe-400-latin13.woff2') format('woff2');
+  src: url('~assets/fonts/Mr_Dafoe-400-latin15.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~assets/fonts/Share-400-latin-ext16.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~assets/fonts/Share-400-latin17.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

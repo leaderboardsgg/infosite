@@ -1,0 +1,59 @@
+{
+  "accordItems": [
+    {
+      "heading": "What are we going to use?? (Tech Stack)",
+      "content": [
+        "Frontend - nuxt.js, tailwind",
+        "Backend - ASP.NET",
+        "DB - Postgres",
+        "Infosite - nuxt.js, scss"
+      ]
+    },
+    {
+      "heading": "Why is this going to work?",
+      "content": [
+        "User research - The people who are building the project and helping out in the discord are the users we want to talk to.",
+        "Outside Motivator - Each change that the community is unhappy about injects new life into the project, motivating us, and new eyes on the project is always good.",
+        "Open Source - because our code is public, anyone is welcome to submit issues, feature requests, pull requests, etc. If you want a change on the site, we want to know, if you want to help code it, even better!"
+      ]
+    },
+    {
+      "heading": "What could get in our way?",
+      "content": [
+        "The first big issue we see is server costs being more than we can handle. We have quite a ways to go before that even kinda becomes a roadblock. For now we are prototyping and working on MVP, which costs nothing but time."
+      ]
+    },
+    {
+      "heading": "Why Are You Doing It? (Technical problem addressed by the project):",
+      "content": [
+        "Current leaderboard api has been frustrating users for years, no improvements or feedback accepted.",
+        "Current leaderboard user experience is incredibly unfriendly for leaderboard moderators.",
+        "Current leaderboard and api are built on old technology that needs an update to this decade."
+      ]
+    },
+    {
+      "heading": "How are you going to pay for it?",
+      "content": [
+        "100% via donations. In a perfect world, we get just enough donations to keep the servers on. If we end up with more than we need, It stays in the donation tin until we need it for servers, or other site related costs. No one is making a profit", "Our open collective is at https://opencollective.com/leaderboardsgg", "Donations will be rewarded with purely cosmetic features on the site. (and the satisfaction that you helped support a passion project for the online gaming community", "There will be no ads.", "Every feature implemented will be available to all users, and offered all for free."
+      ]
+    },
+    {
+      "heading": "Who are we? Who is in charge?",
+      "content": [
+        "We are more than 500 people in a discord working together. (a few of those are bots, lots of them are lurkers, you know how it is)", "The people in charge are also all volunteers. The discord mods are volunteers, the steering committee are volunteers.", "Eventually the site will need a dedicated moderation/admin team, but because of the nature of community led communities, we will have to find a way to pick trustable responsible people. The people modding the discord will not just step into those roles."
+      ]
+    },
+    {
+      "heading": "I want to help/I have ideas/I have connections!",
+      "content": [
+        "Awesome! Please come on into our discord and join the project!", "https://discord.leaderboards.gg"
+      ]
+    },
+    {
+      "heading": "Original Pastebin Mission Statement",
+      "content": [
+        "Written without proofreading, Completely by Squiddo before coffee, all views and opinions are her own and do not reflect the views of anyone else working on the project.", "https://pastebin.com/UtaAwYJi"
+      ]
+    }
+  ]
+}

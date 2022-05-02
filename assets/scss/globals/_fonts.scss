@@ -1,5 +1,7 @@
 $ff-inter: Inter, sans-serif;
 $ff-monofett: Monofett, serif;
+$ff-share: Share, sans-serif;
+$ff-lekton: Lekton, serif;
 $ff-bungee-shade: 'Bungee Shade', sans-serif;
 $ff-mr-dafoe: 'Mr Dafoe', cursive;
 
@@ -21,6 +23,26 @@ $ff-mr-dafoe: 'Mr Dafoe', cursive;
     family: $ff-monofett, serif;
     style: normal;
     weight: 700;
+  }
+}
+
+@font-face
+{
+  font:
+  {
+    family: $ff-share, sans-serif;
+    style: normal;
+    weight: 400;
+  }
+}
+
+@font-face
+{
+  font:
+  {
+    family: $ff-lekton, serif;
+    style: normal;
+    weight: 400;
   }
 }
 
@@ -61,6 +83,26 @@ $ff-mr-dafoe: 'Mr Dafoe', cursive;
     family: $ff-monofett, serif;
     style: normal;
     weight: 700;
+  }
+}
+
+@mixin font-share
+{
+  font:
+  {
+    family: $ff-share, sans-serif;
+    style: normal;
+    weight: 400;
+  }
+}
+
+@mixin font-lekton
+{
+  font:
+  {
+    family: $ff-lekton, serif;
+    style: normal;
+    weight: 400;
   }
 }
 
