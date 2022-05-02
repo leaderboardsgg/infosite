@@ -27,7 +27,6 @@
     &__heading{
       @include animate;
       @include t-level-3;
-      text-align: center;
     }
     &__content{
       @include t-copy;

@@ -2,6 +2,10 @@
   <div class="accordion">
     <div class="accordion-item" v-bind:class="{ 'active': this.show }"  @click="toggleItem">
       <h2 class="accordion-item__heading">
+        <div class="icon icon--toggle">
+          <span class="line--vertical"></span>
+          <span class="line--horizontal"></span>
+        </div>
         <slot name="title"></slot>
       </h2>
       <div v-show="show" class="accordion-item__content">
@@ -70,10 +74,52 @@ export default {
     .accordion-item__heading{
       background-color: rgba(34,211,238, 1);
       color: black;
+      .icon::before {
+        transform: rotateZ(90deg);
+      }
     }
     .accordion-item__content{
       opacity: 1;
       height: 100%;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  top: -18px;
+  left: -10px;
+  position: relative;
+  transition: 300ms;
+
+  &.icon--toggle {
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: .3rem;
+      height: 1.8rem;
+      background: cyan;
+      display: inline-block;
+      transition: 500ms;
+      top: 10%;
+      left: 45%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 10%;
+      left: 45%;
+      content: '';
+      width: .3rem;
+      height: 1.8rem;
+      background: magenta;
+      display: inline-block;
+      transform: rotateZ(90deg);
+    }
+
+    &.toggle--horizontal::before {
+      transform: rotateZ(90deg);
     }
   }
 }
