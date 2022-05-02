@@ -6,7 +6,6 @@ $bar2-top: $bar-size + $bar-space;
 $bar3-top: $bar2-top * 2;
 
 .nav-header{
-  outline: 1px solid $turquoise;
   .nav-toggle {
     width: $toggle-size;
     height: $toggle-size;

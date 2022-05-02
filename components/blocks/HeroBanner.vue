@@ -28,5 +28,9 @@ export default {
 </script>
 
 <style scoped>
-
+.hero-banner{
+  border-top: 1px solid cyan;
+  margin-left: -20px;
+  margin-right: -20px;
+}
 </style>
