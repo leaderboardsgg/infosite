@@ -50,6 +50,7 @@ export default{
   color: white;
   top: 0;
   position: sticky;
+  z-index: 9999;
 
   .nav-container {
     margin-left: auto;
