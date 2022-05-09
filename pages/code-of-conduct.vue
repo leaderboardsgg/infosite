@@ -11,7 +11,7 @@
         nationality, personal appearance, race, caste, color, religion, or sexual
         identity and orientation.</p>
       <p>We pledge to act and interact in ways that contribute to an open, welcoming,
-        diverse, inclusive, and healthy community.</p>
+        diverse, transparent, honest, good intentioned, inclusive, and healthy community.</p>
       <h2 id="our-standards">Our Standards</h2>
       <p>Examples of behavior that contributes to a positive environment for our
         community include:</p>
@@ -52,8 +52,8 @@
         representative at an online or offline event.</p>
       <h2 id="enforcement">Enforcement</h2>
       <p>Instances of abusive, harassing, or otherwise unacceptable behavior may be
-        reported to the community leaders responsible for enforcement at
-        [INSERT CONTACT METHOD].
+        reported to the community leaders responsible for enforcement by sending a direct message to any of the Discord Mods in <a
+          href="https://discord.leaderboards.gg">our discord</a>.
         All complaints will be reviewed and investigated promptly and fairly.</p>
       <p>All community leaders are obligated to respect the privacy and security of the
         reporter of any incident.</p>
@@ -110,3 +110,12 @@ export default {
   layout: 'Synthwave',
 }
 </script>
+
+<style scoped lang="scss">
+a {
+  white-space: nowrap;
+}
+section *{
+  margin-bottom: 20px;
+}
+</style>
