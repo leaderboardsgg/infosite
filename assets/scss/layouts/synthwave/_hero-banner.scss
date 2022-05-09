@@ -1,7 +1,28 @@
 .layout-synthwave {
   color: $white;
-  background: rgb(0, 0, 0);
-  background-image: $bg-gradient;
+  background: rgb(0, 0, 0) $bg-gradient;
+
+  .hero-banner {
+    $self: &;
+    &--blue{
+      .heading{
+        h1{
+          span{
+            background-image: $blue-hero-gradient;
+          }
+        }
+      }
+    }
+    &--red{
+      .heading{
+        h1{
+          span{
+            background-image: $red-hero-gradient;
+          }
+        }
+      }
+    }
+  }
 
   .heading{
     margin-top: -70px;
@@ -11,22 +32,14 @@
     h1{
       justify-content: center;
       display: flex;
-      .main{
+      color: $shocking-pink;
+      @include t-home-accent;
+      span {
         @include t-level-1;
         background-image: $hero-gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px #fff;
-      }
-      .accent{
-        background-image: initial;
-        color: $shocking-pink;
-        @include t-level-2;
-
-        margin-left: -30px;
-        @media ($media-small){
-          margin-left: 0px;
-        }
       }
     }
   }
