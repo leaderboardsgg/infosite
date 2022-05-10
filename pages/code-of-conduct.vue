@@ -110,12 +110,3 @@ export default {
   layout: 'Synthwave',
 }
 </script>
-
-<style scoped lang="scss">
-a {
-  white-space: nowrap;
-}
-section *{
-  margin-bottom: 20px;
-}
-</style>

@@ -1,5 +1,14 @@
+.layout-synthwave{
+  color: $white;
+  .page-wrapper{
+    position: relative;
+    z-index: 10;
+    }
+
+
+  }
 .page {
-  margin: 0 20px;
+  padding: 20px;
   @include t-copy;
   .intro {
     @include t-intro;
@@ -30,6 +39,7 @@
     }
     &__content{
       @include t-copy;
+      backdrop-filter: blur(5px);
       a {
         @include animate;
       }

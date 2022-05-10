@@ -163,8 +163,16 @@ sup {
   top: -0.3em;
 }
 
+.layout-synthwave {
+  color: #fff;
+}
+.layout-synthwave .page-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
 .page {
-  margin: 0 20px;
+  padding: 20px;
   font-family: Lekton, serif, serif;
   font-style: normal;
   font-weight: 400;
@@ -203,6 +211,7 @@ sup {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
+  backdrop-filter: blur(5px);
 }
 .page .accordion-item__content a {
   transition: 250ms;
@@ -216,23 +225,11 @@ sup {
   border-bottom: 1px solid plum;
 }
 
-.layout-synthwave {
-  color: #fff;
-  background: black linear-gradient(to right, #141e30, #000);
-}
 .layout-synthwave .hero-banner--blue .heading h1 span {
   background-image: linear-gradient(0deg, #004686 0%, #00fde8 30%, #bdfceb 40%, #d8fff5 44%, #0c151c 44%, #0c151c 50%, #076467 52%, #1cfee7 60%, #7ffeed 62%, #96fce7 70%, #0ffadb 73%, #0bfde5 88%, #afffeb 100%);
 }
 .layout-synthwave .hero-banner--red .heading h1 span {
   background-image: linear-gradient(0deg, #860c00 0%, #fd004f 30%, #fcbddc 40%, #ffd8eb 44%, #1c0d0c 44%, #1c0d0c 50%, #67071b 52%, #fe1c67 60%, #fe7fad 62%, #fc96c2 70%, #fa0f63 73%, #fd0b5a 88%, #ffafd5 100%);
-}
-.layout-synthwave .heading {
-  margin-top: -70px;
-}
-@media (min-width: 82em) {
-  .layout-synthwave .heading {
-    margin-top: -200px;
-  }
 }
 .layout-synthwave .heading h1 {
   justify-content: center;
