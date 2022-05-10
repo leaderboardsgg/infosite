@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <HeroBanner />
+    <HeroBanner></HeroBanner>
     <h3 class="intro">Open Source. Community Built. Community Kept.</h3>
     <div>
       <CtaLinks />

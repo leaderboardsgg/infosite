@@ -4,3 +4,14 @@ https://picsum.photos/
 https://github.com/torch2424/aesthetic-css
 https://cssgradient.io/
 https://zhiqiyu.github.io/post/fancy-github-readme/#badges
+https://mozillascience.github.io/working-open-workshop/contributing/
+https://opensource.com/life/16/1/8-ways-contribute-open-source-without-writing-code
+https://www.clearvoice.com/blog/create-contributor-guidelines-will-get-great-content-every-time/
+https://gitplanet.com/project/contributing-template
+https://github.com/sindresorhus/awesome
+https://project-awesome.org/zachflower/awesome-open-source-supporters
+https://asmen.icopy.site/awesome/open-source-mac-os-apps/
+https://opensource.com/
+https://awesome-vue.js.org/projects-using-vue-js/open-source.html
+https://awesome-vue.js.org/projects-using-vue-js/a11y.html
+https://awesome-vue.js.org/resources/job-portal.html

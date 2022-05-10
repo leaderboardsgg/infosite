@@ -3,7 +3,7 @@
   @include font-bungee-shade;
 
   font-size: 12rem;
-  line-height: 13rem;
+  line-height: 17.7rem;
 
   @media ($media-small){
     font-size: 4rem;
@@ -15,10 +15,9 @@
   }
 }
 
-@mixin t-level-2
+@mixin t-home-accent
 {
   @include font-mr-dafoe;
-
   font-size: 15rem;
   line-height: 17.7rem;
 

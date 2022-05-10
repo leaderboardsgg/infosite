@@ -1,15 +1,12 @@
 <template>
 <footer>
-<!--  footer-->
 </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer.vue"
+  name: "Footer",
+  components: {
+  }
 };
 </script>
-
-<style scoped>
-
-</style>
