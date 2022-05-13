@@ -14,7 +14,7 @@ export default {
   position: fixed;
   bottom: 0;
   left: -50%;
-  background-image: linear-gradient(90deg, transparent 0%, transparent 85%, #FF7FBF 90%, transparent 95%), linear-gradient(0deg, transparent 0%, transparent 85%, #FF7FBF 90%, transparent 95%);
+  background-image: linear-gradient(90deg, transparent 0%, transparent 85%, #F66CF7 90%, transparent 95%), linear-gradient(0deg, transparent 0%, transparent 85%, #AF50AF 90%, transparent 95%);
   background-size: 50px 25px;
   width: 200vw;
   height: 30vh;

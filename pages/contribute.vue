@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <HeroBanner color="red"><h1><span>How You Can Help</span></h1></HeroBanner>
+    <HeroBanner color="blue"><h1><span>How You Can Help</span></h1></HeroBanner>
     <h3 class="intro">Contributor Guidelines</h3>
     <div>
       <h2>Thank you for your interest in contributing to LeaderboardsGG. We're glad you found your way here, and we're always in need of new contributors.</h2>
@@ -75,6 +75,10 @@ export default {
 <style scoped>
 h2{
   margin-bottom: 25px;
+  margin-top: 25px;
+}
+ul {
+  margin-bottom: 10px;
 }
 </style>
 
