@@ -29,16 +29,13 @@
   font-style: normal;
   font-weight: 700;
 }
-#__nuxt {
-  background-color: black;
-}
-
 body {
   margin: 0;
 }
 
 html {
   box-sizing: border-box;
+  background-color: black;
   color: #fff;
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
@@ -91,7 +88,7 @@ a {
 a.no-pointer {
   cursor: initial;
 }
-p a:not(.button), .accordion li a:not(.button) {
+p a:not(.button), .accordion li a:not(.button), li a:not(.button) {
   transition: 250ms;
   text-decoration: none;
   position: relative;
@@ -99,7 +96,7 @@ p a:not(.button), .accordion li a:not(.button) {
   color: #fff;
   z-index: 0;
 }
-p a:not(.button):before, .accordion li a:not(.button):before {
+p a:not(.button):before, .accordion li a:not(.button):before, li a:not(.button):before {
   content: "";
   background-color: #A317F2;
   position: absolute;
@@ -110,10 +107,10 @@ p a:not(.button):before, .accordion li a:not(.button):before {
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
-p a:not(.button):hover, .accordion li a:not(.button):hover {
+p a:not(.button):hover, .accordion li a:not(.button):hover, li a:not(.button):hover {
   color: #2de2e6;
 }
-p a:not(.button):hover:before, .accordion li a:not(.button):hover:before {
+p a:not(.button):hover:before, .accordion li a:not(.button):hover:before, li a:not(.button):hover:before {
   bottom: 0;
   height: 100%;
 }
@@ -164,6 +161,9 @@ sup {
 }
 
 .layout-synthwave {
+  color: #fff;
+}
+.layout-synthwave a {
   color: #fff;
 }
 .layout-synthwave .page-wrapper {
@@ -307,7 +307,7 @@ sup {
 .nav-header .nav-overlay {
   top: 16px;
   left: 16px;
-  background-image: linear-gradient(180deg, #FF512F 10%, #FF512F 50%, #DD2476 90%);
+  background-image: linear-gradient(90deg, #00ffee, #00f1ff, #00e0ff, #00caff, #3cadff, #a989ff, #e35ae4, #ff00a2);
 }
 
 body.nav--open {

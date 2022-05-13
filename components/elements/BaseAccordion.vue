@@ -1,7 +1,7 @@
 <template>
   <div class="accordion">
-    <div class="accordion-item" v-bind:class="{ 'active': this.show }"  @click="toggleItem">
-      <h2 class="accordion-item__heading">
+    <div class="accordion-item" v-bind:class="{ 'active': this.show }">
+      <h2 class="accordion-item__heading" @click="toggleItem">
         <div class="icon icon--toggle">
           <span class="line--vertical"></span>
           <span class="line--horizontal"></span>
@@ -42,11 +42,12 @@ export default {
     border-width: 1px 1px 1px 1px;
     border-color: skyblue;
     border-style: solid;
-    &:hover{
-      cursor: pointer;
-    }
+
     .accordion-item__heading{
       padding: 25px;
+      &:hover{
+        cursor: pointer;
+        }
     }
     .accordion-item__content{
       opacity: 0;
