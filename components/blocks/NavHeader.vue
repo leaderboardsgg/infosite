@@ -4,11 +4,12 @@
       <div ref="nav-overlay" :class="{ open: navOpen }" :style="{ height: windowDiagonal * 2 + 'px', width: windowDiagonal * 2 + 'px', marginTop: -windowDiagonal + 'px', marginLeft: -windowDiagonal + 'px'  }" class="nav-overlay "></div>
       <nav ref="nav-fullscreen" :class="{ open: navOpen }" :style="{ height: windowHeight + 'px' }" class="nav-fullscreen ">
         <ul>
+          <li @click="toggleNav"><nuxt-link to="/">Home</nuxt-link></li>
           <li><a href="https://discord.leaderboards.gg">Discord</a></li>
           <li><a href="https://github.com/leaderboardsgg">Github</a></li>
           <li><a href="https://opencollective.com/leaderboardsgg">Donate</a></li>
-          <li><nuxt-link to="/code-of-conduct">Code of Conduct</nuxt-link></li>
-          <li><nuxt-link to="/contribute">Contribute</nuxt-link></li>
+          <li @click="toggleNav"><nuxt-link to="/code-of-conduct">Code of Conduct</nuxt-link></li>
+          <li @click="toggleNav"><nuxt-link to="/contribute">Contribute</nuxt-link></li>
         </ul>
       </nav>
       <a ref="nav-toggle" :class="{ open: navOpen }" class="nav-toggle" @click="toggleNav" ><span></span><span></span><span></span></a>
