@@ -23,7 +23,7 @@
        {
          "title": "(MVP OR V1) Provide users with the option to switch between multiple “themes” / color schemes for the site.",
          "detail": [
-           "While many users prefer a “dark” theme, and it would be a good default, some users may prefer other color schemes for various reasons, such as having a difficult time reading/discerning certain colors.",
+           "Why? While many users prefer a “dark” theme, and it would be a good default, some users may prefer other color schemes for various reasons, such as having a difficult time reading/discerning certain colors.",
            "Ideally, users would be able to customize their scheme, in addition to having pre-set options."
          ],
          "link": "https://trello.com/c/oS8PFgKm"
