@@ -29,13 +29,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h2{
+h2 {
   margin-bottom: 4rem;
   margin-top: 8rem;
   text-align: center;
 }
 ul {
   padding: 25px;
+  max-width: 72rem;
   li {
     margin-bottom: 10px;
   }
