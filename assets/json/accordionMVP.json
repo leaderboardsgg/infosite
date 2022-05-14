@@ -23,10 +23,10 @@
        {
          "title": "(MVP OR V1) Provide users with the option to switch between multiple “themes” / color schemes for the site.",
          "detail": [
-           "Why? In many communities, certain files associated with a submission are necessary for verification. This can include movie/demo files, world files, config files, etc.",
-           "Currently, communities that require these kinds of files for submissions are forced to rely on external hosting services. Building this feature into lbgg would not only streamline the submission process, but make leaderboards more robust to loss of information when these hosting services change policy or go offline."
+           "Why? While many users prefer a “dark” theme, and it would be a good default, some users may prefer other color schemes for various reasons, such as having a difficult time reading/discerning certain colors.",
+           "Ideally, users would be able to customize their scheme, in addition to having pre-set options."
          ],
-         "link": "https://trello.com/c/VkFLBlv6"
+         "link": "https://trello.com/c/oS8PFgKm"
        }
      ]
    },
