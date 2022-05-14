@@ -225,6 +225,15 @@ sup {
   border-bottom: 1px solid plum;
 }
 
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+  .grid {
+    display: none;
+  }
+}
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */
+}
 .layout-synthwave .hero-banner--blue .heading h1 span {
   background-image: linear-gradient(0deg, #004686 0%, #00fde8 30%, #bdfceb 40%, #d8fff5 44%, #0c151c 44%, #0c151c 50%, #076467 52%, #1cfee7 60%, #7ffeed 62%, #96fce7 70%, #0ffadb 73%, #0bfde5 88%, #afffeb 100%);
 }
