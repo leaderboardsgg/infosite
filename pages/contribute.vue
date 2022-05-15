@@ -29,7 +29,7 @@
       <h3>Back End</h3>
       <ul>
         <li>
-          Technologies: C#, ASP.NET, PostgreSQL
+          Technologies: C#, ASP.NET Core, PostgreSQL
         </li>
         <li>
           <a href="https://github.com/leaderboardsgg/leaderboard-backend">Github Repo</a>
@@ -81,4 +81,3 @@ ul {
   margin-bottom: 10px;
 }
 </style>
-
