@@ -2,7 +2,7 @@
   <div class="page">
     <HeroBanner></HeroBanner>
     <h3 class="intro">Open Source. Community Built. Community Kept.</h3>
-    <div>
+    <div class="container">
       <CtaLinks />
       <MvpAccordion />
       <InfoAccordion />
@@ -24,3 +24,11 @@ export default {
   layout: 'Synthwave'
 }
 </script>
+
+<style scoped lang="scss">
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
