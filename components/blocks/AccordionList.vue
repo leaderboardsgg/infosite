@@ -2,7 +2,7 @@
   <div>
     ### What are we going to use?? (Tech Stack)
     - Frontend - nuxt.js, tailwind
-    - Backend - ASP.NET
+    - Backend - C#, ASP.NET Core, .NET 6.0
     - Infosite - nuxt.js, scss
     - DB: Postgres
 
