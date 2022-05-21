@@ -35,9 +35,6 @@ export default {
 
 <style lang="scss">
 .accordion {
-  width: 100%;
-  max-width: 900px;
-
   .accordion-item {
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 500ms;
@@ -46,17 +43,15 @@ export default {
     border-color: skyblue;
     border-style: solid;
 
-    .accordion-item__heading {
+    .accordion-item__heading{
       padding: 25px;
-
-      &:hover {
+      &:hover{
         cursor: pointer;
         }
     }
-    .accordion-item__content {
+    .accordion-item__content{
       opacity: 0;
       height: 0;
-
       a{
         border-width: 2px;
         border-color: plum;
@@ -76,17 +71,15 @@ export default {
       }
     }
   }
-  .accordion-item.active {
-    .accordion-item__heading {
+  .accordion-item.active{
+    .accordion-item__heading{
       background-color: rgba(34,211,238, 1);
       color: black;
-
       .icon::before {
         transform: rotateZ(90deg);
       }
     }
-
-    .accordion-item__content {
+    .accordion-item__content{
       opacity: 1;
       height: 100%;
     }
@@ -101,6 +94,7 @@ export default {
   transition: 300ms;
 
   &.icon--toggle {
+
     &::before {
       position: absolute;
       content: '';

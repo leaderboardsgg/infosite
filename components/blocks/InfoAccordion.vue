@@ -36,6 +36,7 @@ h2 {
 }
 ul {
   padding: 25px;
+  max-width: 72rem;
   li {
     margin-bottom: 10px;
   }
