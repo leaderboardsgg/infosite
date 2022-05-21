@@ -35,8 +35,8 @@ export default {
 
 <style lang="scss">
 .accordion {
+  width: 100%;
   max-width: 900px;
-  margin: 0 auto;
 
   .accordion-item {
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
