@@ -37,13 +37,10 @@ h2{
 }
 .mvpItem {
   padding: 25px;
-  h3, p {
-    max-width: 72rem;
-  }
-  h3 {
+  h3{
     margin-bottom: 1rem;
   }
-  p {
+  p{
     margin-bottom: 1rem;
   }
   a {
