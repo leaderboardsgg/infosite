@@ -1,6 +1,12 @@
 {
   "accordItems": [
     {
+      "heading": "What is this site?",
+      "content": [
+        "Leaderboards.gg is a site to host gaming leaderboards, with a focus on speedrunning. We're making a place that aims to listen more closely to gaming communities and allow them more control over the leaderboards they create."
+      ]
+    },
+    {
       "heading": "What are we going to use?? (Tech Stack)",
       "content": [
         "Frontend - nuxt.js, tailwind",
