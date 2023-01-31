@@ -1,7 +1,10 @@
 <template>
   <div class="page">
     <HeroBanner></HeroBanner>
-    <h3 class="intro">Open Source. Community Built. Community Kept.</h3>
+    <h3 class="intro">
+      <p>A (WIP) site to host leaderboards for games.</p>
+      <p>Open Source. Community Built. Community Kept.</p>
+    </h3>
     <div class="container">
       <CtaLinks />
       <MvpAccordion />
