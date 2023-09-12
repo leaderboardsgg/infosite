@@ -37,7 +37,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     height: 80px;
     & .button {
       display: inline-flex;

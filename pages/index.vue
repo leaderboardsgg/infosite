@@ -119,6 +119,8 @@
         order. For example, you can easily configure board for lowest completion
         percent first with ties broken by fastest time.
       </p>
+
+
       <h3 id="public-api">Public API</h3>
       <p>
         All website content will be available from a robust public API. This
@@ -157,5 +159,9 @@ h2,h3{
 }
 ul {
   margin-bottom: 10px;
+  list-style: circle;
+  li {
+    margin-left: 15px;
+  }
 }
 </style>
