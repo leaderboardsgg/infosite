@@ -4,8 +4,8 @@ This is the repo for the current info-site sitting at https://info.leaderboards.
 ### References
 
 Our Other Repos:
-- leaderboards.gg Main Site - https://github.com/leaderboardsgg/leaderboard-site
-- leaderboards.gg Backend - https://github.com/leaderboardsgg/leaderboard-backend-poc
+- Leaderboards.gg Main Site - https://github.com/leaderboardsgg/leaderboard-site
+- Leaderboards.gg Backend - https://github.com/leaderboardsgg/leaderboard-backend-poc
 
 Other Links:
 - Discord - https://discord.leaderboards.gg
@@ -19,7 +19,7 @@ Other Links:
 - [Vue Readme](#vue-readme)
 
 ## Introduction
-Leaderboards.gg (lbgg) was sparked by the purchase of speedrun.com by the esports data analytics company Elo Entertainment. In lbgg we see an opportunity to help the community continue to grow and thrive with tools (a website, an API) built to scale, on newer technologies, curated to what its users want, without it being monetized. Because its open source, the community owns it and can use it as they wish.
+Leaderboards.gg (LBGG) was sparked by the purchase of speedrun.com by the esports data analytics company Elo Entertainment. In LBGG we see an opportunity to help the community continue to grow and thrive with tools (a website, an API) built to scale, on newer technologies, curated to what its users want, without it being monetized. Because its open source, the community owns it and can use it as they wish.
 
 Another huge opportunity we see is being able to handle score based runs on our leaderboards, in addition to time based.
 
