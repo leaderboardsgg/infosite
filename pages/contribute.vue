@@ -104,12 +104,18 @@ export default {
 .page {
   backdrop-filter: blur(10px);
 }
-h2,
-h3 {
-  margin-bottom: 25px;
+h2 {
   margin-top: 25px;
+  margin-bottom: 25px;
+}
+h3,p {
+  margin-bottom: 15px;
 }
 ul {
   margin-bottom: 10px;
+  list-style: circle;
+  li {
+    margin-left: 15px;
+  }
 }
 </style>

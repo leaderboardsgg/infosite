@@ -120,6 +120,30 @@
         percent first with ties broken by fastest time.
       </p>
 
+      <h3>Run Categorization System</h3>
+      <p>
+        You can compete in your favorite games in
+        multiple different ways. Leaderboards.gg has support for categorizing
+        attempts by campaign, goal, restrictions, etc. For example, a game might
+        have separate categories for beating the whole game with no
+        restrictions, getting every item, new game+, and so on.
+      </p>
+      <p>
+        Each run in a category can have additional variables for factors like
+        platform, difficulty, region, or game version. A category can be
+        filtered by these variables. For example, if you only want to see who
+        has the highest score on PS2, hard difficulty, NTSC, version 1.1,
+        it&#39;s easy to do so with just a few clicks.
+      </p>
+      <p>
+        Categories don&#39;t just have to be divided into &quot;Full Game
+        Runs&quot; and &quot;Individual Level Runs.&quot; Leaderboards.gg will
+        support customizable groupings of run categories. In order to support
+        games with multiple modes of play, we will have a intuitive method of
+        grouping logical categories. This can be used to separate runs by
+        gamemode for a game like Kirby Super Star, by expansion for a game like
+        GTAIV, or by scope (full game, chapter, level).
+      </p>
 
       <h3 id="public-api">Public API</h3>
       <p>
@@ -153,9 +177,12 @@ export default {
   display: flex;
   flex-direction: column;
 }
-h2,h3{
-  margin-bottom: 25px;
+h2 {
   margin-top: 25px;
+  margin-bottom: 25px;
+}
+h3,p {
+  margin-bottom: 15px;
 }
 ul {
   margin-bottom: 10px;
