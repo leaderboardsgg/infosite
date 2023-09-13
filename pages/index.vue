@@ -78,11 +78,10 @@
       </p>
       <h3 id="our-promise">Our Promise</h3>
       <p>
-        In order to best serve our users, leaderboards.gg will remain free and
+        In order to best serve our users, Leaderboards.gg will remain free and
         open source, ad-free, and without paid features. This means that all the
         features of the website will be available to all users free of charge,
-        and we will never put features behind a paywall. As a registered Open
-        Collective, Leaderboards.gg is funded entirely by donations, all of
+        and we will never put features behind a paywall. As a registered <a href="https://opencollective.com/leaderboardsgg">Open Collective</a>, Leaderboards.gg is funded entirely by donations, all of
         which go directly towards site hosting and related costs. This funding
         model allows us to remain ad-free. Users will never see advertisements
         while browsing the website, and will not be bombarded with messages

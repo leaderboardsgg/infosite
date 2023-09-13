@@ -6,7 +6,7 @@
     <h3 class="intro">Contributor Guidelines</h3>
     <div class="container">
       <h2>
-        Thank you for your interest in contributing to LeaderboardsGG. We're
+        Thank you for your interest in contributing to Leaderboards.gg. We're
         glad you found your way here, and we're always in need of new
         contributors.
       </h2>
@@ -45,7 +45,7 @@
 
       <h3>Back End</h3>
       <ul>
-        <li>Technologies: C#, ASP.NET Core, .NET 6.0, PostgreSQL</li>
+        <li>Technologies: C#, ASP.NET Core, .NET 7.0, PostgreSQL</li>
         <li>
           <a href="https://github.com/leaderboardsgg/leaderboard-backend"
             >Github Repo</a
