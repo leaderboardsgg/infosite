@@ -1,4 +1,4 @@
-# Contributing to leaderboards.gg
+# Contributing to Leaderboards.gg
 
 We appreciate your help!
 

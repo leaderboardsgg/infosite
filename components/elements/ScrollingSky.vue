@@ -21,7 +21,7 @@ export default {
   transform: translate3D(0, 0, 0) perspective(150px) rotateX(145deg) ;
   perspective-origin: top;
 
-  animation-name: movement;
+  /* animation-name: movement; */
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;

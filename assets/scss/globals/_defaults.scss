@@ -2,8 +2,7 @@ body {
   margin: 0;
 }
 
-html
-{
+html {
   box-sizing: border-box;
   background-color: black;
   color: $white;
@@ -21,20 +20,22 @@ html
 }
 
 b,
-strong
-{
+strong {
   font-weight: 600;
 }
 
-picture
-{
+picture {
   display: block;
 
   line-height: 0;
 }
 
-img
-{
+p {
+  color: lime;
+  outline: 50px solid yellow;
+}
+
+img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -54,8 +55,7 @@ h3,
 h4,
 h5,
 h6,
-p
-{
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -65,40 +65,32 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
-  span
-  {
+h6 {
+  span {
     color: $black;
   }
 }
 
-a
-{
+a {
   text-decoration: none;
 
-  &.no-pointer
-  {
+  &.no-pointer {
     cursor: initial;
   }
 
   //color: $dark-blue;
-  .breadcrumb &
-  {
-    //@include animate;
+  // .breadcrumb & {
+  //   @include animate;
 
-    &:hover
-    {
-      //color: $blue;
-    }
-  }
+  //   &:hover {
+  //     color: $blue;
+  //   }
+  // }
 
-  &:not(.button)
-  {
+  &:not(.button) {
     p &,
     .accordion li &,
-    li &,
-    {
+    li & {
       @include animate;
       text-decoration: none;
       @include link-hover;
@@ -124,14 +116,11 @@ a
 //  }
 //}
 
-figure
-{
+figure {
   margin: 0;
 
-  &.border
-  {
-    img
-    {
+  &.border {
+    img {
       box-sizing: border-box;
 
       //border: 1px solid $light-gray;
@@ -139,50 +128,37 @@ figure
   }
 }
 
-video
-{
+video {
   max-width: 100%;
 }
 
-::selection
-{
+::selection {
   background: $purple;
   color: $white;
 }
 
-ul,
-ol
-{
-  margin: 0;
-  padding-left: 0;
-  li
-  {
-    box-sizing: border-box;
-  }
-}
+// ul,
+// ol {
+//   margin: 0;
+//   padding-left: 0;
+//   li {
+//     box-sizing: border-box;
+//   }
+// }
 
-ul
-{
-  list-style: none;
-}
-
-input
-{
+input {
   box-sizing: border-box;
 
-  &:focus
-  {
+  &:focus {
     outline: none;
   }
 }
 
-dd
-{
+dd {
   margin-left: 0;
 }
 
-sup
-{
+sup {
   top: -0.3em;
 }
 
