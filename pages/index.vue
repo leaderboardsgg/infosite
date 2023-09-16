@@ -90,7 +90,7 @@
         they&#39;ve contributed is being used for.
       </p>
       <p>
-        Operating in such a way the people in change of the website do not
+        Operating in such a way the people in charge of the website do not
         receive compensation ensures that they cannot enact policies that
         benefit them monetarily, reducing the potential for conflicts of
         interest.
