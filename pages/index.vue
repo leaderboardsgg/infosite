@@ -115,8 +115,8 @@
       <p>
         On our site you won&#39;t just be restricted to runs based on fastest
         time or highest score. Runs can be ranked any number of metrics in any
-        order. For example, you can easily configure board for lowest completion
-        percent first with ties broken by fastest time.
+        order. For example, you can easily configure a board for lowest completion
+        percentage first with ties broken by fastest time.
       </p>
 
       <h3>Run Categorization System</h3>
